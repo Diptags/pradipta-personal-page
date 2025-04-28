@@ -1,11 +1,10 @@
 import React from "react";
-import { Mail, Send, MoveUpRight, MailCheck } from "lucide-react";
-import Image from "next/image";
+import { MoveUpRight } from "lucide-react";
 import { useContact } from "@/hooks/useContact";
 import ClipLoader from "react-spinners/ClipLoader";
 
 export const ContactForm = ({ contactPageData }) => {
-  const { formData, setFormData, handleChange, handleSubmit, isSending } =
+  const { formData, handleChange, handleSubmit, isSending } =
     useContact();
 
   return (
@@ -61,7 +60,7 @@ export const ContactForm = ({ contactPageData }) => {
           aria-label="Loading Spinner"
           data-testid="loader"
         />
-        {isSending ? "Sending .." : "Just Send"}
+        {isSending ? "Sending .." : "Send Message"}
         <span className="transition duration-500 group-hover:scale-125">
           <MoveUpRight size={17} />
         </span>

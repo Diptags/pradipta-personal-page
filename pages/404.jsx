@@ -1,7 +1,3 @@
-import {
-  useState, useEffect
-} from 'react';
-
 const PageNotFound = () => {
   return (
     <section className="h-screen flex flex-col justify-center items-center dark:text-offwhite">
@@ -10,7 +6,7 @@ const PageNotFound = () => {
         <span>404</span>
         <span>|</span>
         <p className="font-exo">
-          This page could not be found.
+          Sorry, the page you're looking for can't be found.
         </p>
       </div>
     </section>

@@ -6,107 +6,70 @@ import {
   Facebook,
   Instagram,
   MailCheck,
-  Mail,
-  Send
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { contactPageData, site_metadata } from "@/constants";
 
+const socialIcons = {
+  Twitter: <Twitter />,
+  Linkedin: <Linkedin />,
+  Facebook: <Facebook />,
+  Instagram: <Instagram />,
+  Github: <Github />,
+};
+
 const Contact = () => {
+  const { title, intro, socials, alternative } = contactPageData || {};
+  const { contact } = site_metadata || {};
+
   return (
     <section className="sm:max-w-3xl">
-      <SeoMetadata
-        title={site_metadata?.contact?.title}
-        desc={site_metadata?.contact?.desc}
-      />
+      <SeoMetadata title={contact?.title} desc={contact?.desc} />
+      <PageTitle title={title} effect="purple" />
+      <p className="info">{intro}</p>
 
-      <PageTitle title="Get in touch" effect="purple" />
+      <ul className="flex gap-2 my-4">
+        {socials?.map((platform) => (
+          <li key={platform.id} className="social_icon">
+            <Link href={platform.link} target="_blank">
+              {socialIcons[platform.name] || <Github />}
+            </Link>
+          </li>
+        ))}
+      </ul>
 
-      <p className="info">{contactPageData?.intro}</p>
+      <ul className="flex gap-2 flex-wrap mb-6">
+        <li className="flex items-center gap-2">
+          <MailCheck size={18} />
+          <span>My Email:</span>
+          <Link
+            href="mailto:pradipta.samiadji@gmail.com"
+            className="alternative_contact"
+          >
+            {alternative?.email}
+          </Link>
+        </li>
+      </ul>
 
       <div className="my-10 md:flex md:gap-4 md:justify-between md:items-end">
         <ContactForm contactPageData={contactPageData} />
-        <div className="mt-10 md:m-0 md:flex md:flex-col md:justify-between">
+        <div className="mt-10 md:mt-0 md:flex md:flex-col md:justify-between">
           <Image
-            className="w-full dark:hidden"
             src="/images/get-in-touch.svg"
-            width={800}
-            height={400}
+            width={1000}
+            height={500}
             alt="Get in touch"
+            className="w-full dark:hidden"
           />
           <Image
-            className="w-full hidden dark:block"
             src="/images/get-in-touch-dark.svg"
-            width={800}
-            height={400}
+            width={1000}
+            height={500}
             alt="Get in touch"
+            className="w-full hidden dark:block"
           />
-          <div className="my-4">
-            <h2 className="sub_heading">Other Ways to Reach Me</h2>
-            <ul className="flex gap-2 flex-wrap">
-              <li className="flex gap-w">
-                <span className="flex items-center gap-2">
-                  <MailCheck size={18} />
-                  Email:
-                </span>
-                <Link
-                  className="alternative_contact"
-                  href="mailto:fazlerabbidev@outlook.com"
-                >
-                  {contactPageData?.alternative?.email}
-                </Link>
-              </li>
-              <li className="flex gap-w">
-                <span className="flex items-center gap-2">
-                  <Send size={18} />
-                  Telegram:
-                </span>
-                <Link
-                  className="alternative_contact"
-                  href={contactPageData?.alternative?.telegram || ""}
-                  target="_blank"
-                >
-                  Fazle Rabbi Dev
-                </Link>
-              </li>
-            </ul>
-          </div>
         </div>
-      </div>
-
-      {/* Social Platform */}
-      <div className="my-10">
-        <h2 className="sub_heading">Follow Me</h2>
-        <ul className="flex gap-2">
-          {contactPageData?.socials?.map(platform => (
-            <li key={platform.id} className="social_icon">
-              <Link target="_blank" href={platform.link}>
-                {platform.name === "Twitter" ? (
-                  <Twitter />
-                ) : platform.name === "Linkedin" ? (
-                  <Linkedin />
-                ) : platform.name === "Facebook" ? (
-                  <Facebook />
-                ) : platform.name === "Instagram" ? (
-                  <Instagram />
-                ) : (
-                  <Github />
-                )}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="info">
-        <span className="bg-gray-200 shadow-2xl rounded p-1 dark:bg-dark_4 ">
-          💡
-        </span>
-        <p>
-          Looking forward to connecting with fellow enthusiasts and industry
-          professionals!
-        </p>
       </div>
     </section>
   );

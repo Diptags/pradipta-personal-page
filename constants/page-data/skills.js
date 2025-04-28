@@ -109,12 +109,12 @@ const Proficient = [
   ]
   
 const Comfortable = [
-/*    {
+{
       id: 1,
       name: "Redux",
       icon: "redux.png"
-    },*/
-    {
+    },
+/*    {
       id: 2,
       name: "Zustand",
       icon: "zustand.jpeg"

@@ -4,4 +4,4 @@ Disallow:
 Disallow: /*.json
 Crawl-delay: 60
 
-Sitemap: https://fazle-rabbi-dev.vercel.app/sitemap.xml
+Sitemap: https://pradiptagitaya.com/sitemap.xml

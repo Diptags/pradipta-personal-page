@@ -4,7 +4,6 @@ import Link from "next/link";
 import { MoveUpRight } from "lucide-react";
 import { aboutPageData, site_metadata } from "@/constants";
 
-
 const About = () => {
   return (
     <section className="sm:max-w-3xl">
@@ -17,8 +16,8 @@ const About = () => {
       <div className="">
         {/* Intro */}
         <p className="info dark:bg-transparent dark:p-4 dark:border-l-[.5px] dark:border-teal-400/40 dark:rounded">
-          <Image src="/me.png" width={100} height={100} alt="Fazle Rabbi" />
-          Hello, I'm <span className="font-bold">Fazle Rabbi</span>,
+          <Image src="/profile.png" width={100} height={100} alt="Rd Pradipta Gitaya Samadji" />
+          Hello, I'm <span className="font-bold">Rd Pradipta Gitaya Samiadji (Pradipta)</span>,
           {" "}
           {aboutPageData?.about_1}
           <br />

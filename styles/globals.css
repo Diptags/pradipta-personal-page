@@ -19,7 +19,7 @@
   }*/
 
   .gradient_effect {
-    @apply absolute top-0 left-0 w-full h-[40vh] bg-gradient-to-br from-pink-400 to-purple-500 blur-3xl opacity-10 -z-20 md:h-[70vh];
+    @apply absolute left-0 w-full h-[40vh] bg-gradient-to-br from-orange-500 to-blue-500 blur-3xl opacity-35 -z-20 md:h-[70vh];
   }
 
   /* Typography */
@@ -80,7 +80,7 @@
   }
 
   .resume_btn {
-    @apply flex items-center gap-2 bg-dark_2 text-light_1 rounded py-3 px-6 transition cursor-pointer active:scale-90 hover:bg-dark_4 dark:bg-light_2 dark:text-black dark:hover:bg-light_3;
+    @apply flex items-center gap-2 bg-dark_2 text-light_1 rounded py-2 px-6 transition cursor-pointer active:scale-90 hover:bg-dark_4 dark:bg-light_2 dark:text-black dark:hover:bg-light_3;
   }
 
   .work_btn {
