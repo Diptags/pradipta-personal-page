@@ -3,7 +3,6 @@ import {
   Home,
   UserRound,
   Lightbulb,
-  CircleUser,
   MessagesSquare,
   Flame,
   Moon,
@@ -12,13 +11,12 @@ import {
 } from "lucide-react";
 import { useRouter } from "next/router";
 import { navLinks } from "@/constants";
-// import useDarkTheme from "@/hooks/useDarkTheme";
-import { useThemeContext }  from "@/context"
+import { useThemeContext } from "@/context"
 
 export const Header = () => {
   const { pathname } = useRouter();
   const { isDarkMode, toggleDarkMode } = useThemeContext();
-  
+
   return (
     <header className="fixed z-50 top-0 w-full bg-[#f8f8ff] shadow rounded-b-2xl h-16 px-8 dark:bg-[#161d27]">
       <nav className="h-full w-full overflow-auto text-center">
@@ -33,8 +31,8 @@ export const Header = () => {
                 pathname === "/" && name === "Home"
                   ? "nav_link_active"
                   : pathname === `/${name.toLowerCase()}`
-                  ? "nav_link_active"
-                  : ""
+                    ? "nav_link_active"
+                    : ""
               }
             >
               <Link

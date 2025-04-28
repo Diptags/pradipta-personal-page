@@ -17,7 +17,7 @@ export const site_metadata = {
   },
   skill: {
     title: "Skills - Rd Pradipta Gitaya Samiadji",
-    desc: "Explore Rd Pradipta Gitaya Samiadji's proficient skills and knowledge."
+    desc: "Explore Rd Pradipta Gitaya Samiadji's skills and knowledge."
   },
   project: {
     title: "Projects - Rd Pradipta Gitaya Samiadji",

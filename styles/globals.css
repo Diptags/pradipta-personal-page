@@ -7,7 +7,7 @@
 
   body {
     @apply font-roboto scroll-smooth text-dark_2 dark:text-offwhite;
-    background-image: url('/bg-light.png'); /* Replace with your image path */
+    background-image: url('/images/bg-light.png'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire viewport */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -35,7 +35,7 @@
   }
 
   .text_tiny {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .info {
@@ -139,12 +139,7 @@
   .project_modal{
     @apply relative bg-light_1 mx-4 my-4 p-4 rounded-2xl dark:bg-gray-800 dark:border-[1px] dark:border-offwhite/30 md:mx-0 md:max-w-3xl
   }
-  
-  /* Skills */
-  .skill_page_gradient {
-    @apply absolute top-0 left-0 w-full h-[40vh] bg-gradient-to-br from-green-400/40 to-purple-300 blur-2xl opacity-20 -z-20 md:h-[70vh];
-  }
-  
+    
   /* Blogs */
   .blog_platform{
     @apply px-2 py-1 bg-white shadow-2xl border-[1px] border-gray-400 rounded-lg flex justify-center items-center gap-2 transition duration-200 dark:hover:bg-gray-200 active:scale-95 dark:text-black dark:border-none dark:shadow-none

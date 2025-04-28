@@ -2,7 +2,7 @@ import links from "./links"
 
 export const homePageData = {
   photo: {
-    url: "/profile.png",
+    url: "/images/profile.png",
     alt: "Rd Pradipta Gitaya Samadji",
   },
   greeting: 'Welcome aboard!',
