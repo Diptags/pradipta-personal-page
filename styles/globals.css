@@ -4,8 +4,14 @@
 @tailwind utilities;
 
 @layer base {
+
   body {
-    @apply font-roboto scroll-smooth bg-[ghostwhite] text-dark_2 dark:bg-[#0d1117] dark:text-offwhite;
+    @apply font-roboto scroll-smooth text-dark_2 dark:text-offwhite;
+    background-image: url('/bg-light.png'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
   }
 
   nav::-webkit-scrollbar {
@@ -19,7 +25,7 @@
   }*/
 
   .gradient_effect {
-    @apply absolute left-0 w-full h-[40vh] bg-gradient-to-br from-orange-500 to-blue-500 blur-3xl opacity-35 -z-20 md:h-[70vh];
+    @apply absolute left-0 w-full h-[40vh] bg-gradient-to-br from-orange-500 to-blue-500 blur-3xl opacity-20 -z-20 md:h-[70vh];
   }
 
   /* Typography */

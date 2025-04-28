@@ -3,6 +3,7 @@ const gradientEffect = {
     purple: "from-fuchsia-600 to-blue-700",
     green: "from-[#04a09b] to-[#40a1e0]",
     pink: "from-pink-500 to-green-600",
+    blue: "from-orange-400 to-blue-500",
     none: "from-black to-black"
   },
 
@@ -10,6 +11,7 @@ const gradientEffect = {
     purple: "from-fuchsia-300 to-blue-200",
     green: "from-lime-200 to-pink-300",
     pink: "from-pink-500 to-green-600",
+    blue: "from-orange-300 to-blue-400",
     none: "from-black to-black"
   }
 };
