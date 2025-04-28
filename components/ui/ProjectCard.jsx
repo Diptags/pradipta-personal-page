@@ -38,7 +38,7 @@ export const ProjectCard = ({ project }) => {
         {/* Project Info */}
         <div className="p-4 relative">
           <div className="mb-2 border-b-[.7px] border-gray-700/20">
-            <h3 className="text-xl font-ranade-bold">{project?.name}</h3>
+            <h3 className="text-xl font-poppins-bold">{project?.name}</h3>
             <div className="my-2 flex gap-2 flex-wrap">
               {project?.technologies?.map(tech => (
                 <span key={tech.name} className={tech.style}>

@@ -39,13 +39,13 @@ const About = () => {
 
       {/* Apps I Use Daily */}
       <div className="my-10">
-        <h2 className="sub_heading">🛸 Apps I use daily</h2>
+        <h2 className="sub_heading">🛸 Apps I Use Daily</h2>
         <p className="info text-justify">{apps_i_use}</p>
       </div>
 
       {/* My Learning Journey */}
       <div className="my-10">
-        <h2 className="sub_heading">🚀 My learning journey</h2>
+        <h2 className="sub_heading">🚀 My Learning Journey</h2>
         <p className="info text-justify">{my_journey}</p>
       </div>
 

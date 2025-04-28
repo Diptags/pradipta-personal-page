@@ -4,9 +4,8 @@
 @tailwind utilities;
 
 @layer base {
-
   body {
-    @apply font-roboto scroll-smooth text-dark_2 dark:text-offwhite;
+    @apply font-poppins-regular scroll-smooth text-dark_2 dark:text-offwhite;
     background-image: url('/images/bg-light.png'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire viewport */
     background-position: center; /* Centers the image */
@@ -20,10 +19,6 @@
 }
 
 @layer utilities {
-  /* .heading-1 {
-    @apply text-3xl font-ranade-bold mb-2;
-  }*/
-
   .gradient_effect {
     @apply absolute left-0 w-full h-[40vh] bg-gradient-to-br from-orange-500 to-blue-500 blur-3xl opacity-20 -z-20 md:h-[70vh];
   }
@@ -31,7 +26,7 @@
   /* Typography */
   .sub_heading {
     @apply mb-2 text-xl text-dark_1 dark:text-white;
-    font-family: "Exo", sans-serif;
+    font-family: "poppins-medium", sans-serif;
   }
 
   .text_tiny {
@@ -40,10 +35,6 @@
 
   .info {
     @apply font-normal text-[rgb(63,52,70)] leading-7 tracking-wide border-l-[1px] border-gray-700/10 pl-4 dark:text-offwhite dark:border-offwhite/35;
-  }
-
-  .gradient_line {
-    @apply w-40 h-1 bg-gradient-to-r from-fuchsia-500 to-purple-600;
   }
 
   .gradient_text {
@@ -103,8 +94,7 @@
   .btn_linkedin {
     @apply flex gap-2 items-center rounded px-4 py-2 transition duration-200 hover:scale-95 hover:bg-dark_4 dark:bg-light_2 dark:text-dark_2 dark:hover:bg-light_3;
     background-color: #0077B5;
-    color: white;
-  
+    color: white;  
   }
 
   /* Navbar */

@@ -19,7 +19,7 @@ const gradientEffect = {
 export const PageTitle = ({ title, effect }) => {
   return (
     <h1
-      className={`w-fit text-4xl mb-4 font-ranade-bold bg-gradient-to-r ${gradientEffect.light[effect]} bg-clip-text text-transparent dark:from-[#0fffb9] dark:to-[#63d7ff]`}
+      className={`w-fit text-4xl mb-4 font-poppins-bold bg-gradient-to-r ${gradientEffect.light[effect]} bg-clip-text text-transparent dark:from-[#0fffb9] dark:to-[#63d7ff]`}
     >
       {title}
     </h1>

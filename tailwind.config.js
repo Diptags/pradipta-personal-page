@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "ranade-bold": ["Ranade-Bold", "sans"],
-        "ranade-light": ["Ranade-Light", "sans"],
-        exo: ["Exo", "sans-serif"],
-        roboto: ["Roboto", "sans-serif"]
+        "poppins-bold": ["Poppins-Bold", "sans"],
+        "poppins-light": ["Poppins-Light", "sans"],
+        "poppins-medium": ["Poppins-Medium", "sans"],
+        "poppins-regular": ["Poppins-Regular", "sans"],
       },
       colors: {
         dark_1: "#121212",
