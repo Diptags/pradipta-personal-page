@@ -44,15 +44,28 @@ const skills = [
 ];
 
 const others = [
-  { name: "SEO", icon: "🎯" },
-  { name: "Web security", icon: "🔐" },
   { name: "Communication", icon: "✅" },
-  { name: "Teamwork", icon: "⚙️" }
+  { name: "Teamwork", icon: "⚙️" },
+  { name: "Problem Solving", icon: "🧠" },
+  { name: "Decision Making", icon: "💬" },
+  { name: "Time Management", icon: "⏰" },
+  { name: "Attention to Detail", icon: "🔍" },
+  { name: "Adaptability", icon: "🔄" },
 ];
+
+const side_note = `
+  I have also accumulated a diverse range of experiences across professional work, academic achievements, volunteer activities, recommendations, and certifications in various fields.
+  These experiences have shaped my growth, expanded my perspectives, and strengthened my ability to contribute in different environments.
+  If you would like to learn more about my background, detailed information is available on my LinkedIn profile. Feel free to explore!
+`;
 
 export const skillPageData = {
   title: "Skills and Knowledge",
+  stack_title: "What I Bring to the Table ⚡",
+  foundation_title: "Have a strong foundation in 💪",
+  side_note_title: "A Side Note 📒",
+  intro,
   skills,
   others,
-  intro
+  side_note,
 };
