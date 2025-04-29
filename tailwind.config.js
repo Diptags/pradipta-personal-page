@@ -1,3 +1,5 @@
+const { blue_1, blue_2, blue_3, orange_1, orange_2, orange_3, offwhite, light_1, light_2, light_3, dark_1, dark_2, dark_3 } = require('./constants/colors');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: "false",
@@ -14,25 +16,19 @@ module.exports = {
         "poppins-regular": ["Poppins-Regular", "sans"],
       },
       colors: {
-        // Main Color Pallette
-        blue_1: "#C3D7FF",
-        blue_2: "#8BB1FF",
-        blue_3: "#1080FF",
-        orange_1: "#FFDABA",
-        orange_2: "#FEC17B",
-        orange_3: "#FC7B20",
-        offwhite: "#D0DFFF",
-        // Additional Colors
-        light_1: "#f8f8f8",
-        light_2: "#f0f0f0",
-        light_3: "#ededed",
-        // TODO: Adjust the Dark Colors for Dark Mode Features
-        dark_1: "#121212",
-        dark_2: "#171717",
-        dark_3: "#1a1a1a",
-        dark_4: "#202020",
-        // TODO: Adjust this color
-        
+        blue_1,
+        blue_2,
+        blue_3,
+        orange_1,
+        orange_2,
+        orange_3,
+        offwhite,
+        light_1,
+        light_2,
+        light_3,
+        dark_1,
+        dark_2,
+        dark_3,
       }
     }
   },

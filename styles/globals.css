@@ -79,11 +79,11 @@
   }
 
   .resume_btn {
-    @apply flex items-center gap-2 bg-blue_3 text-light_1 rounded py-2 px-6 transition cursor-pointer active:scale-90 hover:bg-orange_3;
+    @apply flex items-center gap-2 bg-orange_3 text-light_1 rounded py-2 px-6 transition cursor-pointer active:scale-90 hover:bg-blue_3;
   }
 
-  .work_btn {
-    @apply flex items-center gap-2 border-[1px] bg-orange_3 text-light_1 rounded py-2 px-6 transition cursor-pointer active:scale-90 hover:bg-blue_3 hover:text-light_1;
+  .whatsapp_me_btn {
+    @apply flex items-center gap-2 bg-blue_3 text-light_1 rounded py-2 px-6 transition cursor-pointer active:scale-90 hover:bg-orange_3;
   }
 
   /* About Page */
@@ -129,7 +129,7 @@
   }
   
   .project_modal_container{
-    @apply overflow-auto fixed z-50 top-0 bottom-0 left-0 right-0 w-full flex justify-center items-start bg-dark_4/40
+    @apply overflow-auto fixed z-50 top-0 bottom-0 left-0 right-0 w-full flex justify-center items-start bg-dark_3/40
   }
   
   .project_modal{
