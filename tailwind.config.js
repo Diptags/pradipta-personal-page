@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: "class",
+  darkMode: "false",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,15 +14,15 @@ module.exports = {
         "poppins-regular": ["Poppins-Regular", "sans"],
       },
       colors: {
-        // Color Pallette
+        // Main Color Pallette
         blue_1: "#C3D7FF",
         blue_2: "#8BB1FF",
         blue_3: "#1080FF",
         orange_1: "#FFDABA",
         orange_2: "#FEC17B",
         orange_3: "#FC7B20",
-
-
+        offwhite: "#D0DFFF",
+        // Additional Colors
         light_1: "#f8f8f8",
         light_2: "#f0f0f0",
         light_3: "#ededed",
@@ -32,7 +32,7 @@ module.exports = {
         dark_3: "#1a1a1a",
         dark_4: "#202020",
         // TODO: Adjust this color
-        offwhite: "#D0DFFF",
+        
       }
     }
   },

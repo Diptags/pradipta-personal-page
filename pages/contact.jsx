@@ -61,7 +61,7 @@ const Contact = () => {
             width={300}
             height={150}
             alt="Get in touch"
-            className="w-full dark:hidden"
+            className="w-full"
           />
         </div>
       </div>

@@ -55,7 +55,7 @@ export const HomeContent = () => {
                 alt="Waving Hand"
               />
             </span>
-            <h1 className="text-black text-2xl font-poppins-bold dark:text-white">
+            <h1 className="text-black text-2xl font-poppins-bold">
               {tagline}
             </h1>
 

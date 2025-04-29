@@ -24,12 +24,12 @@ export default async function handler(req, res) {
 
     res.status(200).json({
       success: true,
-      message: "Email sent successfully"
+      message: "Your message has been sent successfully!"
     });
   } catch (error) {
     res.status(500).json({
       success: false,
-      message: "Oops! There was a server side error."
+      message: "Oops! Server side error occured."
     });
   }
 }

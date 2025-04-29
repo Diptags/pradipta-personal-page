@@ -19,12 +19,12 @@ export const Header = () => {
   // const { isDarkMode, toggleDarkMode } = useThemeContext();
 
   return (
-    <header className="fixed z-50 top-2 left-1/2 transform -translate-x-1/2 bg-white shadow-md rounded-2xl px-8 py-2 border-2 border-orange-400 dark:bg-[#161d27] dark:border-offwhite/40 md:px-8 md:py-2 sm:px-4 sm:py-1">
+    <header className="fixed z-50 top-2 left-1/2 transform -translate-x-1/2 bg-white shadow-md rounded-2xl px-8 py-2 border-2 border-orange-400 md:px-8 md:py-2 sm:px-4 sm:py-1">
       <nav className="h-full w-full text-center">
         <ul className="flex gap-2 justify-center items-center">
 
           {/* TODO: Enable Dark Mode Features */}
-          {/* <li onClick={toggleDarkMode} className="dark:text-offwhite">
+          {/* <li onClick={toggleDarkMode}>
             {isDarkMode ? <Sun /> : <Moon />}
           </li> */}
 

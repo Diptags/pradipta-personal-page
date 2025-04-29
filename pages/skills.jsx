@@ -62,7 +62,7 @@ const Skills = () => {
           {others?.map((skill) => (
             <li
               key={skill.name}
-              className="px-4 py-1 bg-gray-700/10 rounded shadow-2xl flex gap-2 items-center dark:bg-gray-800"
+              className="px-4 py-1 bg-gray-700/10 rounded shadow-2xl flex gap-2 items-center"
             >
               <span>{skill.icon}</span>
               {skill.name}
