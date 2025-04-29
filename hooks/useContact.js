@@ -6,9 +6,9 @@ import toast from 'react-hot-toast';
 const MSG_THANKS_TITLE = 'Thank You!';
 const MSG_THANKS_CONTENT = '📬 Your message has been sent! Thank you for getting in touch.';
 
-const ERR_VALIDATION_ALL = 'Please fill out all fields before sending!';
-const ERR_VALIDATION_EMAIL = 'Please enter a valid email address!';
-const ERR_VALIDATION_MSG = 'Please enter a message min 20 characters!';
+const ERR_VALIDATION_ALL = 'Fill out all fields before sending!';
+const ERR_VALIDATION_EMAIL = 'Enter a valid email address!';
+const ERR_VALIDATION_MSG = 'Enter a message min 20 characters!';
 const ERR_SEND_MESSAGE = 'An error occured. Please try again!';
 
 export const useContact = () => {

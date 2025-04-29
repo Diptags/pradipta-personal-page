@@ -2,14 +2,15 @@ import { Home } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const PageNotFound = () => {
+// TODO: Remove this component when everything is completed
+const PageUnderConstruction = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <Image
-        src={"/images/sorry-404.png" || ""}
+        src={"/images/sorry-construction.png" || ""}
         width={500}
         height={500}
-        alt={"Sorry Page Does Not Exists"}
+        alt={"Page is Under Construction"}
       />
 
       {/* Back to Home Page */}
@@ -25,4 +26,4 @@ const PageNotFound = () => {
   );
 };
 
-export default PageNotFound;
+export default PageUnderConstruction;

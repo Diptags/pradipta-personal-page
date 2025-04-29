@@ -3,14 +3,13 @@ import { Header } from "@/components";
 import Head from "next/head";
 import { site_metadata } from "@/constants";
 import { Toaster } from "react-hot-toast";
-import { useVisitorCount } from "@/hooks";
 import { useRouter } from "next/router";
 import { ThemeProvider } from "@/context";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
 
-  // TODO: Enable this when everything is already fixed
+  // TODO: Enable this when everything is already fixed + Enable Other Tech Stacks
   // useVisitorCount(router?.pathname || "unknown", router?.asPath);
 
   return (
@@ -21,7 +20,7 @@ export default function App({ Component, pageProps }) {
         <meta property="og:description" content={site_metadata?.desc} />
         <meta property="og:image" content="https://pradiptagitaya.com/og-image.png" />
 
-        <meta name="google-site-verification" content="e2eypPimpfZkOQOEpkZSgIbHZCp1EuaV8O5NPn4zNnc" />
+        {/* <meta name="google-site-verification" content="" /> */}
 
         {/*<meta property="og:image:width" content="1280" />
         <meta property="og:image:height" content="731" />
@@ -50,11 +49,11 @@ export default function App({ Component, pageProps }) {
         <link rel="manifest" href="/manifest.json" />
         
         {/* Google Ads */}
-        <script
+        {/* <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5974347816252396"
           crossorigin="anonymous"
-        ></script>
+        ></script> */}
       </Head>
       <ThemeProvider>
         <Header />

@@ -34,7 +34,7 @@ export const homePageData = {
   ],
   buttons: [
     "Download Resume",
-    "My Work",
+    "About Me",
   ],
   resumelink: "https://docs.google.com/document/d/1p6R9KG3CNLVprYmi8uv_27uVoVy4W8IpolaG_Hodvow/edit?usp=sharing"
 };

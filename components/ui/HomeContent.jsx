@@ -93,9 +93,9 @@ export const HomeContent = () => {
             ))}
           </div>
 
-          {/* My Work CTA */}
+          {/* About Me CTA */}
           <div className="flex items-center gap-2 flex-wrap mt-10 md:m-0">
-            <Link href="/projects">
+            <Link href="/about">
               <button className="work_btn" type="button">
                 <MousePointerClick size={16} />
                 {buttons[1]}

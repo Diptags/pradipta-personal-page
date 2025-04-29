@@ -6,7 +6,7 @@
 @layer base {
   body {
     @apply font-poppins-regular scroll-smooth text-dark_2 dark:text-offwhite;
-    background-image: url('/images/bg-light.png'); /* Replace with your image path */
+    background-image: url('/images/main-bg.svg'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire viewport */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -75,24 +75,24 @@
   
   /* Home Page */
   .social_icon {
-    @apply border-[1.4px] border-black p-1 rounded cursor-pointer transition duration-100 dark:border-offwhite active:bg-purple-600/10 active:scale-95;
+    @apply border-[1.4px] border-black hover:bg-blue_1 p-1 rounded cursor-pointer transition duration-100 active:scale-95;
   }
 
   .resume_btn {
-    @apply flex items-center gap-2 bg-dark_2 text-light_1 rounded py-2 px-6 transition cursor-pointer active:scale-90 hover:bg-dark_4 dark:bg-light_2 dark:text-black dark:hover:bg-light_3;
+    @apply flex items-center gap-2 bg-blue_3 text-light_1 rounded py-2 px-6 transition cursor-pointer active:scale-90 hover:bg-orange_3;
   }
 
   .work_btn {
-    @apply flex items-center gap-2 border-[1px] border-dark_1 text-dark_1 rounded py-2 px-6 transition cursor-pointer active:scale-90 hover:bg-dark_4 hover:text-light_1 dark:bg-transparent dark:text-light_2 dark:border-light_2 dark:hover:text-dark_2 dark:hover:bg-light_3;
+    @apply flex items-center gap-2 border-[1px] bg-orange_3 text-light_1 rounded py-2 px-6 transition cursor-pointer active:scale-90 hover:bg-blue_3 hover:text-light_1;
   }
 
   /* About Page */
   .btn_link {
-    @apply flex gap-2 items-center rounded bg-dark_2 text-white px-4 py-2 transition duration-200 hover:scale-95 hover:bg-dark_4 dark:bg-light_2 dark:text-dark_2 dark:hover:bg-light_3;
+    @apply flex gap-2 items-center rounded bg-orange_3 text-light_1 px-4 py-2 transition duration-200 hover:scale-95;
   }
 
   .btn_linkedin {
-    @apply flex gap-2 items-center rounded px-4 py-2 transition duration-200 hover:scale-95 hover:bg-dark_4 dark:bg-light_2 dark:text-dark_2 dark:hover:bg-light_3;
+    @apply flex gap-2 items-center rounded px-4 py-2 transition duration-200 hover:scale-95;
     background-color: #0077B5;
     color: white;  
   }
@@ -112,11 +112,11 @@
   }
 
   .send_btn {
-    @apply bg-gray-900 text-white rounded w-full px-4 py-2 flex justify-center items-center gap-2 transition duration-500 disabled:bg-gray-600 active:scale-95 hover:bg-gray-800 dark:bg-gray-700;
+    @apply bg-blue_3 text-white rounded w-full px-4 py-2 flex justify-center items-center gap-2 transition duration-500 active:scale-95 hover:bg-orange_3;
   }
 
   .alternative_contact {
-    @apply px-2 text-purple-600 dark:text-teal-300 active:bg-purple-700/20 dark:active:bg-teal-300/20;
+    @apply px-2 text-orange-400 dark:text-teal-300 active:bg-purple-700/20 dark:active:bg-teal-300/20;
   }
 
   /* Project */
