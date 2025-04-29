@@ -13,7 +13,7 @@ const skills = [
   { id: 4, name: "TypeScript", icon: "typescript.svg" },
   { id: 5, name: "React & React Native", icon: "react.svg" },
   { id: 6, name: "Figma", icon: "figma.svg" },
-  { id: 7, name: "Redux", icon: "redux.png" },
+  { id: 7, name: "Redux", icon: "redux.svg" },
   { id: 8, name: "Next.js", icon: "nextjs.svg" },
   { id: 9, name: "Vite", icon: "vite.svg" },
   { id: 10, name: "TailwindCSS", icon: "tailwindcss.svg" },
