@@ -19,9 +19,9 @@ export const Header = () => {
   // const { isDarkMode, toggleDarkMode } = useThemeContext();
 
   return (
-    <header className="fixed z-50 top-2 left-1/2 transform -translate-x-1/2 bg-white shadow-md rounded-2xl px-8 py-2 border-2 border-orange-400 dark:bg-[#161d27] dark:border-offwhite/40">
+    <header className="fixed z-50 top-2 left-1/2 transform -translate-x-1/2 bg-white shadow-md rounded-2xl px-8 py-2 border-2 border-orange-400 dark:bg-[#161d27] dark:border-offwhite/40 md:px-8 md:py-2 sm:px-4 sm:py-1">
       <nav className="h-full w-full text-center">
-        <ul className="flex gap-3 justify-center items-center">
+        <ul className="flex gap-2 justify-center items-center">
 
           {/* TODO: Enable Dark Mode Features */}
           {/* <li onClick={toggleDarkMode} className="dark:text-offwhite">
@@ -40,23 +40,23 @@ export const Header = () => {
                   }`}
               >
                 <Link
-                  className="nav_link flex flex-col items-center"
+                  className="nav_link flex flex-col items-center sm:text-xs"
                   href={name === "Home" ? "/" : `/${name.toLowerCase()}`}
                 >
                   {name === "Home" ? (
-                    <Home color={isActive ? DARK_BLUE_HEADER : undefined} />
+                    <Home color={isActive ? DARK_BLUE_HEADER : undefined} size={20} />
                   ) : name === "About" ? (
-                    <UserRound color={isActive ? DARK_BLUE_HEADER : undefined} />
+                    <UserRound color={isActive ? DARK_BLUE_HEADER : undefined} size={20} />
                   ) : name === "Skills" ? (
-                    <Lightbulb color={isActive ? DARK_BLUE_HEADER : undefined} />
+                    <Lightbulb color={isActive ? DARK_BLUE_HEADER : undefined} size={20} />
                   ) : name === "Projects" ? (
-                    <Flame color={isActive ? DARK_BLUE_HEADER : undefined} />
+                    <Flame color={isActive ? DARK_BLUE_HEADER : undefined} size={20} />
                   ) : name === "Blogs" ? (
-                    <Globe color={isActive ? DARK_BLUE_HEADER : undefined} />
+                    <Globe color={isActive ? DARK_BLUE_HEADER : undefined} size={20} />
                   ) : (
-                    <MessagesSquare color={isActive ? DARK_BLUE_HEADER : undefined} />
+                    <MessagesSquare color={isActive ? DARK_BLUE_HEADER : undefined} size={20} />
                   )}
-                  <span className="text-sm font-light">{name}</span>
+                  <span className="text-sm font-light sm:text-xs">{name}</span>
                 </Link>
               </li>
             );
