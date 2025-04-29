@@ -5,63 +5,60 @@ import {
   Lightbulb,
   MessagesSquare,
   Flame,
-  Moon,
-  Sun,
-  Globe
+  Globe,
 } from "lucide-react";
 import { useRouter } from "next/router";
 import { navLinks } from "@/constants";
-import { useThemeContext } from "@/context"
 
 export const Header = () => {
   const { pathname } = useRouter();
-  const { isDarkMode, toggleDarkMode } = useThemeContext();
+
+  {/* TODO: Enable Dark Mode Features */ }
+  // const { isDarkMode, toggleDarkMode } = useThemeContext();
 
   return (
-    <header className="fixed z-50 top-0 w-full bg-[#f8f8ff] shadow rounded-b-2xl h-16 px-8 dark:bg-[#161d27]">
-      <nav className="h-full w-full overflow-auto text-center">
-        <ul className="h-full inline-flex md:flex gap-4 justify-center items-center">
+    <header className="fixed z-50 top-2 left-1/2 transform -translate-x-1/2 bg-white shadow-md rounded-2xl px-8 py-2 border-2 border-orange-400 dark:bg-[#161d27] dark:border-offwhite/40">
+      <nav className="h-full w-full text-center">
+        <ul className="flex gap-3 justify-center items-center">
 
           {/* TODO: Enable Dark Mode Features */}
           {/* <li onClick={toggleDarkMode} className="dark:text-offwhite">
             {isDarkMode ? <Sun /> : <Moon />}
           </li> */}
 
-          {navLinks?.map(name => (
-            <li
-              key={name}
-              className={
-                pathname === "/" && name === "Home"
-                  ? "nav_link_active"
-                  : pathname === `/${name.toLowerCase()}`
-                    ? "nav_link_active"
-                    : ""
-              }
-            >
-              <Link
-                // scroll={false}
-                className="nav_link"
-                href={name === "Home" ? "/" : `/${name.toLowerCase()}`}
+          {navLinks?.map((name) => {
+            const isActive =
+              (pathname === "/" && name === "Home") ||
+              pathname === `/${name.toLowerCase()}`;
+
+            return (
+              <li
+                key={name}
+                className={`flex flex-col items-center ${isActive ? "nav_link_active" : ""
+                  }`}
               >
-                {name === "Home" ? (
-                  <Home />
-                ) : name === "About" ? (
-                  <UserRound />
-                ) : name === "Skills" ? (
-                  <Lightbulb />
-                ) : name === "Projects" ? (
-                  <Flame />
-                ) : name === "Blogs" ? (
-                  <Globe />
-                ) : name === "Home" ? (
-                  <Home />
-                ) : (
-                  <MessagesSquare />
-                )}
-                <span className="text-sm font-light">{name}</span>
-              </Link>
-            </li>
-          ))}
+                <Link
+                  className="nav_link flex flex-col items-center"
+                  href={name === "Home" ? "/" : `/${name.toLowerCase()}`}
+                >
+                  {name === "Home" ? (
+                    <Home color={isActive ? "blue" : undefined} />
+                  ) : name === "About" ? (
+                    <UserRound color={isActive ? "blue" : undefined} />
+                  ) : name === "Skills" ? (
+                    <Lightbulb color={isActive ? "blue" : undefined} />
+                  ) : name === "Projects" ? (
+                    <Flame color={isActive ? "blue" : undefined} />
+                  ) : name === "Blogs" ? (
+                    <Globe color={isActive ? "blue" : undefined} />
+                  ) : (
+                    <MessagesSquare color={isActive ? "blue" : undefined} />
+                  )}
+                  <span className="text-sm font-light">{name}</span>
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </header>

@@ -103,7 +103,7 @@
   }
 
   .nav_link_active {
-    @apply border-b-[1px] border-gray-700/30 dark:border-offwhite/40;
+    @apply border-b-[2px] border-orange-400 dark:border-offwhite/40;
   }
 
   /* Contact */
