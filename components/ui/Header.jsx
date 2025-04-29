@@ -10,6 +10,8 @@ import {
 import { useRouter } from "next/router";
 import { navLinks } from "@/constants";
 
+const DARK_BLUE_HEADER = "#0082FF";
+
 export const Header = () => {
   const { pathname } = useRouter();
 
@@ -42,17 +44,17 @@ export const Header = () => {
                   href={name === "Home" ? "/" : `/${name.toLowerCase()}`}
                 >
                   {name === "Home" ? (
-                    <Home color={isActive ? "blue" : undefined} />
+                    <Home color={isActive ? DARK_BLUE_HEADER : undefined} />
                   ) : name === "About" ? (
-                    <UserRound color={isActive ? "blue" : undefined} />
+                    <UserRound color={isActive ? DARK_BLUE_HEADER : undefined} />
                   ) : name === "Skills" ? (
-                    <Lightbulb color={isActive ? "blue" : undefined} />
+                    <Lightbulb color={isActive ? DARK_BLUE_HEADER : undefined} />
                   ) : name === "Projects" ? (
-                    <Flame color={isActive ? "blue" : undefined} />
+                    <Flame color={isActive ? DARK_BLUE_HEADER : undefined} />
                   ) : name === "Blogs" ? (
-                    <Globe color={isActive ? "blue" : undefined} />
+                    <Globe color={isActive ? DARK_BLUE_HEADER : undefined} />
                   ) : (
-                    <MessagesSquare color={isActive ? "blue" : undefined} />
+                    <MessagesSquare color={isActive ? DARK_BLUE_HEADER : undefined} />
                   )}
                   <span className="text-sm font-light">{name}</span>
                 </Link>
