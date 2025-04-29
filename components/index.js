@@ -1,5 +1,5 @@
 export * from "./ui/Header";
-export * from "./ui/Hero";
+export * from "./ui/HomeContent";
 export * from "./ui/ProjectCard";
 export * from "./ui/ContactForm";
 export * from "./ui/BlogCard.jsx";

@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+// TODO: Adjust the dark theme to show preferred color pallete
+
 const useDarkTheme = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 

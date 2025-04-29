@@ -2,34 +2,39 @@ import links from "./links"
 
 export const homePageData = {
   photo: {
-    url: "/me.png",
-    alt: "Fazle Rabbi"
+    url: "/images/profile.png",
+    alt: "Rd Pradipta Gitaya Samadji",
   },
-  tagline: "I love to transform ideas into web application.",
-  tagline2: "I build web applications to empower businesses",
+  greeting: 'Welcome aboard!',
+  tagline: "I transform ideas into systems, content, design, and code.",
   intro:
-    "I am a passionate MERN stack web developer from Bangladesh, deeply in love with coding and exploring various tech domains.",
+    "I'm Rd Pradipta Gitaya Samiadji, a passionate Software Engineer, Writer, and Designer from Indonesia. I turn ideas into functional systems, create technical and blog content, and bring designs to life through code.",
   status: [
-    "Im currently building Full Stack Projects.",
-    "Im on a mission to become a full stack developer.",
-    "I bring life to designs through lines of code."
+    "I am working on Frontend and Full Stack projects.",
+    "Currently on a mission to become a better Software Engineer.",
+    "I enjoy writing and creating technical and blog content.",
+    "I love bringing designs to life through code and creativity."
   ],
   socials: [
     {
       id: 1,
-      name: "twitter",
-      link: links.twitter
-    },
-    {
-      id: 2,
       name: "linkedin",
       link: links.linkedin
     },
     {
-      id: 3,
+      id: 2,
       name: "github",
       link: links.github
+    },
+    {
+      id: 3,
+      name: "gitlab",
+      link: links.gitlab
     }
   ],
-  resumelink: "/fazle-rabbi-resume.pdf"
+  buttons: [
+    "Download Resume",
+    "About Me",
+  ],
+  resumelink: "https://docs.google.com/document/d/1p6R9KG3CNLVprYmi8uv_27uVoVy4W8IpolaG_Hodvow/edit?usp=sharing"
 };

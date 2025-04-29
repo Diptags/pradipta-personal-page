@@ -5,7 +5,12 @@
 
 @layer base {
   body {
-    @apply font-roboto scroll-smooth bg-[ghostwhite] text-dark_2 dark:bg-[#0d1117] dark:text-offwhite;
+    @apply font-poppins-regular scroll-smooth text-dark_2 dark:text-offwhite;
+    background-image: url('/images/main-bg.svg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
   }
 
   nav::-webkit-scrollbar {
@@ -14,30 +19,22 @@
 }
 
 @layer utilities {
-  /* .heading-1 {
-    @apply text-3xl font-ranade-bold mb-2;
-  }*/
-
   .gradient_effect {
-    @apply absolute top-0 left-0 w-full h-[40vh] bg-gradient-to-br from-pink-400 to-purple-500 blur-3xl opacity-10 -z-20 md:h-[70vh];
+    @apply absolute left-0 w-full h-[40vh] bg-gradient-to-br from-orange-500 to-blue-500 blur-3xl opacity-20 -z-20 md:h-[70vh];
   }
 
   /* Typography */
   .sub_heading {
     @apply mb-2 text-xl text-dark_1 dark:text-white;
-    font-family: "Exo", sans-serif;
+    font-family: "poppins-medium", sans-serif;
   }
 
   .text_tiny {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .info {
     @apply font-normal text-[rgb(63,52,70)] leading-7 tracking-wide border-l-[1px] border-gray-700/10 pl-4 dark:text-offwhite dark:border-offwhite/35;
-  }
-
-  .gradient_line {
-    @apply w-40 h-1 bg-gradient-to-r from-fuchsia-500 to-purple-600;
   }
 
   .gradient_text {
@@ -75,24 +72,29 @@
   }
 
   /* Others */
+  
+  /* Home Page */
   .social_icon {
-    @apply border-[1.4px] border-black p-1 rounded cursor-pointer transition duration-100 dark:border-offwhite active:bg-purple-600/10 active:scale-95;
+    @apply border-[1.4px] border-black hover:bg-blue_1 p-1 rounded cursor-pointer transition duration-100 active:scale-95;
   }
 
   .resume_btn {
-    @apply flex items-center gap-2 bg-dark_2 text-light_1 rounded py-3 px-6 transition cursor-pointer active:scale-90 hover:bg-dark_4 dark:bg-light_2 dark:text-black dark:hover:bg-light_3;
+    @apply flex items-center gap-2 bg-blue_3 text-light_1 rounded py-2 px-6 transition cursor-pointer active:scale-90 hover:bg-orange_3;
   }
 
   .work_btn {
-    @apply flex items-center gap-2 border-[1px] border-dark_1 text-dark_1 rounded py-2 px-6 transition cursor-pointer active:scale-90 hover:bg-dark_4 hover:text-light_1 dark:bg-transparent dark:text-light_2 dark:border-light_2 dark:hover:text-dark_2 dark:hover:bg-light_3;
+    @apply flex items-center gap-2 border-[1px] bg-orange_3 text-light_1 rounded py-2 px-6 transition cursor-pointer active:scale-90 hover:bg-blue_3 hover:text-light_1;
   }
 
+  /* About Page */
   .btn_link {
-    @apply flex gap-2 items-center rounded bg-dark_2 text-white px-4 py-2 transition duration-200 hover:scale-95 hover:bg-dark_4 dark:bg-light_2 dark:text-dark_2 dark:hover:bg-light_3;
+    @apply flex gap-2 items-center rounded bg-orange_3 text-light_1 px-4 py-2 transition duration-200 hover:scale-95;
   }
 
-  .link {
-    @apply border-b-[1px] border-purple-500 hover:text-purple-500;
+  .btn_linkedin {
+    @apply flex gap-2 items-center rounded px-4 py-2 transition duration-200 hover:scale-95;
+    background-color: #0077B5;
+    color: white;  
   }
 
   /* Navbar */
@@ -101,7 +103,7 @@
   }
 
   .nav_link_active {
-    @apply border-b-[1px] border-gray-700/30 dark:border-offwhite/40;
+    @apply border-b-[2px] border-orange-400 dark:border-offwhite/40;
   }
 
   /* Contact */
@@ -110,11 +112,11 @@
   }
 
   .send_btn {
-    @apply bg-gray-900 text-white rounded w-full px-4 py-2 flex justify-center items-center gap-2 transition duration-500 disabled:bg-gray-600 active:scale-95 hover:bg-gray-800 dark:bg-gray-700;
+    @apply bg-blue_3 text-white rounded w-full px-4 py-2 flex justify-center items-center gap-2 transition duration-500 active:scale-95 hover:bg-orange_3;
   }
 
   .alternative_contact {
-    @apply px-2 text-purple-600 dark:text-teal-300 active:bg-purple-700/20 dark:active:bg-teal-300/20;
+    @apply px-2 text-orange-400 dark:text-teal-300 active:bg-purple-700/20 dark:active:bg-teal-300/20;
   }
 
   /* Project */
@@ -133,12 +135,7 @@
   .project_modal{
     @apply relative bg-light_1 mx-4 my-4 p-4 rounded-2xl dark:bg-gray-800 dark:border-[1px] dark:border-offwhite/30 md:mx-0 md:max-w-3xl
   }
-  
-  /* Skills */
-  .skill_page_gradient {
-    @apply absolute top-0 left-0 w-full h-[40vh] bg-gradient-to-br from-green-400/40 to-purple-300 blur-2xl opacity-20 -z-20 md:h-[70vh];
-  }
-  
+    
   /* Blogs */
   .blog_platform{
     @apply px-2 py-1 bg-white shadow-2xl border-[1px] border-gray-400 rounded-lg flex justify-center items-center gap-2 transition duration-200 dark:hover:bg-gray-200 active:scale-95 dark:text-black dark:border-none dark:shadow-none

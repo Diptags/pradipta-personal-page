@@ -1,4 +1,4 @@
-import { Hero, SeoMetadata } from "@/components";
+import { HomeContent, SeoMetadata } from "@/components";
 import { site_metadata } from "@/constants";
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
         title={site_metadata?.home?.title}
         desc={site_metadata?.home?.desc}
       />
-      <Hero />
+      <HomeContent />
     </>
   );
 };

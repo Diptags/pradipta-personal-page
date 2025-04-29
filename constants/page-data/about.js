@@ -1,8 +1,39 @@
 export const aboutPageData = {
-  name: "Fazle Rabbi",
-  about_1: "a highly dedicated and skilled MERN stack web developer from Bangladesh 🇧🇩, currently pursuing my B.S.C. Honours degree in the Botany department. My dream is to become a successful modern full-stack developer and secure a position in a tech company.",
-  what_i_love: "I am deeply in love with coding and exploring various tech domains, including web development, mobile app development, cybersecurity, and ethical hacking.",
-  my_hobbies: "I find joy in the art of travel, the thrill of solving coding challenges, and the satisfaction of transforming ideas into reality through programming. Whether it's developing a feature-rich web app or mobile app. I'm always eager to take on new challenges.",
-  apps_i_use: "In my daily life, I rely on apps like Chat-GPT, Notion, Todoist, Trello & Bundlenotes to stay organized and productive.",
-  my_journey: "In the pursuit of my passion for technology, I initially delved into the world of hacking, driven by a genuine interest in cybersecurity and ethical hacking. However, my journey took a transformative turn when I discovered the vast realm of web development. Guided by a web development roadmap, invaluable tips, and tricks shared by fellow developers on Instagram, I embarked on this exciting path. My learning journey crystallized through tutorials on YouTube, notably from the channel 'Anisul Islam,' and various other enriching sources. As I honed my skills, I transitioned into a MERN stack developer, embracing the power of JavaScript in crafting dynamic and robust web applications."
-}
+  title: "About Me",
+  name: "Rd Pradipta Gitaya Samiadji (Pradipta)",
+  about: `
+    a versatile IT professional with 4+ years of experience ranging from developing robust full-stack web and mobile apps to mentoring fresh IT graduates into world-class developers. 
+    I hold a Bachelor of Science in Computer Science (Information Systems major) from Universitas Indonesia and plan to pursue a Master’s Degree to strengthen my technical and critical thinking skills. 
+    
+    <br/><br/>
+    Currently, I focus on software design and development, with a strong passion for frontend and full-stack engineering and crafting seamless user experiences with React, TypeScript, and backend integrations to build scalable, high-performing platforms. 
+    During my undergraduate years, I served as a campus Teaching Assistant (TA) in 10+ courses, fueling my passion for mentorship and collaborative learning, and I actively competed in national and international tech competitions across software development, game design, data science, and cybersecurity. 
+    
+    <br/><br/>
+    My diverse IT journey has shaped me into a curious, adaptable problem-solver who values teamwork, innovation, and impactful solutions. 
+    I’m always excited about meaningful collaborations, new challenges, and a good tech chat. Feel free to connect!
+  `,
+
+  what_i_love: `
+    I’m passionate about coding and love diving into diverse tech areas, from web and mobile app development to research, writing technical and non-technical articles, UI design, and gaming.
+  `,
+
+  my_hobbies: `
+    I find happiness in traveling, gaming, solving coding challenges, designing intuitive user interfaces, and bringing ideas to life through programming and writing. 
+    I love wearing different hats, staying flexible, and always being open to learning new things across tech and creative fields. 
+    Whether it’s developing a feature-rich web or mobile app, crafting engaging articles, or creating thoughtful UI designs, I’m always excited to take on new challenges and push my creativity further.
+  `,
+
+  apps_i_use: `
+    In my daily life, I rely on several important apps like ChatGPT, Cursor, Notion, Reminder, Todoist, Trello, and Google Workspace to stay organized and productive.
+  `,
+
+  my_journey: `
+    Fueled by a passion for technology, I began my journey by exploring the basics — computer I/O concepts, hardware, and software. 
+    This curiosity led me to pursue a degree in Information Technology, where I ventured into diverse fields such as software engineering, UI/UX design, data science, AI development, game development, and IT-business case studies.
+
+    Over time, I discovered that my true interests lie in Software Engineering, UI Design, Ubiquitous Computing, and Writing. 
+    Supported by inspiring mentors, university courses, and countless self-taught lessons, I committed myself to this exciting path. 
+    My growth has been shaped by hands-on experience, insightful tutorials on YouTube, and a wide range of enriching resources that continue to fuel my passion for building, designing, and sharing ideas through technology.
+  `
+};
