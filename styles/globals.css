@@ -6,7 +6,7 @@
 @layer base {
   body {
     @apply font-poppins-regular scroll-smooth text-dark_2 dark:text-offwhite;
-    background-image: url('/images/main-bg.svg'); /* Replace with your image path */
+    background-image: url('/images/main-bg.png'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire viewport */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
