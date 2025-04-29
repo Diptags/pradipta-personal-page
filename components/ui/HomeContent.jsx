@@ -6,11 +6,11 @@ import { homePageData } from "@/constants";
 import { orange_3 } from "@/constants/colors";
 
 const ProfilePhoto = ({ photo }) => (
-  <div className="w-32 md:w-auto flex flex-col items-center mb-5">
+  <div className="w-32 md:w-auto flex flex-col items-center my-5">
     <Image
       src={photo.url || ""}
-      width={300}
-      height={300}
+      width={800}
+      height={800}
       alt={photo.alt || "Profile Photo"}
     />
   </div>
@@ -46,7 +46,7 @@ const StatusSection = ({ status }) => (
 );
 
 const CallToActionButtons = ({ links, buttons }) => (
-  <div className="mt-10 md:m-0 flex items-center gap-2">
+  <div className="mt-5 flex items-center gap-4">
     <Link href={links.resume} target="_blank">
       <button className="resume_btn" type="button">
         <Download size={20} />
