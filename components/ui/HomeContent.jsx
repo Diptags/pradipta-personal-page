@@ -38,7 +38,7 @@ const StatusSection = ({ status }) => (
   <div className="md:my-4 text-sm font-light">
     {status.map((item, index) => (
       <p key={index} className="text-justify my-2 flex gap-2">
-        <ChevronsRight size={18} color={orange_3} />
+        <ChevronsRight size={15} color={orange_3} />
         <span>{item}</span>
       </p>
     ))}
@@ -49,13 +49,13 @@ const CallToActionButtons = ({ links, buttons }) => (
   <div className="mt-5 flex items-center gap-4">
     <Link href={links.resume} target="_blank">
       <button className="resume_btn" type="button">
-        <Download size={20} />
+        <Download size={15} />
         {buttons[0]}
       </button>
     </Link>
     <Link target="_blank" href={links.whatsapp}>
       <button className="whatsapp_me_btn" type="button">
-        <Phone size={20} />
+        <Phone size={15} />
         {buttons[1]}
       </button>
     </Link>

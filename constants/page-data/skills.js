@@ -11,7 +11,7 @@ const skills = [
   { id: 2, name: "CSS", icon: "css3.svg" },
   { id: 3, name: "Javascript", icon: "javascript.svg" },
   { id: 4, name: "TypeScript", icon: "typescript.svg" },
-  { id: 5, name: "React & React Native", icon: "react.svg" },
+  { id: 5, name: "React & RN", icon: "react.svg" },
   { id: 6, name: "Figma", icon: "figma.svg" },
   { id: 7, name: "Redux", icon: "redux.svg" },
   { id: 8, name: "Next.js", icon: "nextjs.svg" },
@@ -54,9 +54,8 @@ const others = [
 ];
 
 const side_note = `
-  I have also accumulated a diverse range of experiences across professional work, academic achievements, volunteer activities, recommendations, and certifications in various fields.
-  These experiences have shaped my growth, expanded my perspectives, and strengthened my ability to contribute in different environments.
-  If you would like to learn more about my background, detailed information is available on my LinkedIn profile. Feel free to explore!
+  Until now I have gained diverse experiences through work, academics, volunteering, and certifications, all of which have shaped my growth and adaptability.
+  You can find more details on my LinkedIn profile. Feel free to take a look!
 `;
 
 export const skillPageData = {
