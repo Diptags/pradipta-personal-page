@@ -1,3 +1,5 @@
+import links from "./links";
+
 export const homePageData = {
   // Profile Information
   photo: {
@@ -27,4 +29,26 @@ export const homePageData = {
     resume: "https://docs.google.com/document/d/1p6R9KG3CNLVprYmi8uv_27uVoVy4W8IpolaG_Hodvow/edit?usp=sharing",
     whatsapp: "https://wa.link/tryppq",
   },
+  socials: [
+    {
+      id: 1,
+      name: "Linkedin",
+      link: links.linkedin
+    },
+    {
+      id: 2,
+      name: "Github",
+      link: links.github
+    },
+    {
+      id: 3,
+      name: "Gitlab",
+      link: links.gitlab
+    },
+    {
+      id: 4,
+      name: "Instagram",
+      link: links.instagram
+    }
+  ]
 };

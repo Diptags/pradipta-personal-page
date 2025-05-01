@@ -1,24 +1,13 @@
 import { PageTitle, ContactForm, SeoMetadata } from "@/components";
 import {
-  Github,
-  Gitlab,
-  Linkedin,
-  Instagram,
   MailCheck,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { contactPageData, site_metadata } from "@/constants";
 
-const socialIcons = {
-  Linkedin: <Linkedin />,
-  Instagram: <Instagram />,
-  Github: <Github />,
-  Gitlab: <Gitlab />,
-};
-
 const Contact = () => {
-  const { title, intro, email_title, socials, alternative } = contactPageData || {};
+  const { title, intro, email_title, alternative } = contactPageData || {};
   const { contact } = site_metadata || {};
 
   return (
@@ -28,7 +17,7 @@ const Contact = () => {
       <p className="info text-justify">{intro}</p>
 
       {/* Email Address */}
-      <ul className="flex gap-2 flex-wrap mt-8 mb-6">
+      <ul className="flex gap-2 flex-wrap my-5">
         <li className="flex items-center gap-2">
           <MailCheck size={20} />
           <span>{email_title}</span>
@@ -41,21 +30,10 @@ const Contact = () => {
         </li>
       </ul>
 
-      {/* Social Media Icons */}
-      <ul className="flex gap-2 my-4">
-        {socials?.map((platform) => (
-          <li key={platform.id} className="social_icon">
-            <Link href={platform.link} target="_blank">
-              {socialIcons[platform.name] || <Github />}
-            </Link>
-          </li>
-        ))}
-      </ul>
-
       {/* TODO: Integrate Contact Form With Database */}
-      <div className="my-10 md:flex md:gap-4 md:justify-between md:items-end">
+      <div className="md:flex md:gap-4 md:justify-between md:items-end">
         <ContactForm contactPageData={contactPageData} />
-        <div>
+        <div className="hidden md:block">
           <Image
             src="/images/get-in-touch.png"
             width={300}

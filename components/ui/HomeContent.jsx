@@ -1,19 +1,38 @@
-import { Download, ChevronsRight, Phone } from "lucide-react";
+import { Download, ChevronsRight, Phone, Linkedin, Instagram, Github, Gitlab } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useSpring, animated } from "react-spring";
 import { homePageData } from "@/constants";
 import { orange_3 } from "@/constants/colors";
 
+const socialIcons = {
+  Linkedin: <Linkedin />,
+  Github: <Github />,
+  Gitlab: <Gitlab />,
+  Instagram: <Instagram />,
+};
+
 const ProfilePhoto = ({ photo }) => (
-  <div className="w-32 md:w-auto flex flex-col items-center my-5">
+  <div className="flex flex-col items-center my-2">
     <Image
       src={photo.url || ""}
-      width={800}
-      height={800}
+      width={200}
+      height={200}
       alt={photo.alt || "Profile Photo"}
     />
   </div>
+);
+
+const SocialIcons = ({ socials }) => (
+  <ul className="flex justify-center items-center gap-3 my-2">
+    {socials?.map((platform) => (
+      <li key={platform.id} className="social_icon">
+        <Link href={platform.link} target="_blank">
+          {socialIcons[platform.name] || <Github />}
+        </Link>
+      </li>
+    ))}
+  </ul>
 );
 
 const GreetingSection = ({ greeting, tagline, intro }) => (
@@ -69,14 +88,18 @@ export const HomeContent = () => {
     from: { opacity: 0, transform: "translateX(-30%)" },
   });
 
-  const { photo, greeting, tagline, intro, status, buttons, links } =
+  const { photo, greeting, tagline, intro, status, buttons, links, socials } =
     homePageData;
 
   return (
     <section className="relative min-h-screen md:flex md:justify-center md:items-center sm:max-w-3xl">
       <animated.div className="transition duration-100" style={pageAnim}>
         <div className="gap-5 md:flex-row-reverse md:justify-between flex flex-col items-center">
-          <ProfilePhoto photo={photo} />
+
+          <div className="flex flex-col item-center">
+            <ProfilePhoto photo={photo} />
+            <SocialIcons socials={socials} />
+          </div>
           <div>
             <GreetingSection
               greeting={greeting}

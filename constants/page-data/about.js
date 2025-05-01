@@ -1,6 +1,6 @@
 export const aboutPageData = {
   title: "About Me",
-  story_title: "👋🏻 Hi, Pradipta here!",
+  story_title: "👋🏽 Hi, Pradipta here!",
   name: "Rd Pradipta Gitaya Samiadji (Pradipta)",
   about: `
     a software engineer driven by a passion for creating seamless, high-performing front-end experiences. I've had the opportunity to work with diverse technologies and in various environments.
