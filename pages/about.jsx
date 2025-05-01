@@ -4,7 +4,7 @@ import { MoveUpRight } from "lucide-react";
 import { aboutPageData, site_metadata } from "@/constants";
 
 const About = () => {
-  const { title, name, about, what_i_love, my_hobbies, apps_i_use, my_journey } = aboutPageData;
+  const { title, name, about, current_activities, what_i_love, my_hobbies, apps_i_use, my_journey } = aboutPageData;
   const { about: metaAbout, desc: metaDesc } = site_metadata;
 
   return (
@@ -25,22 +25,16 @@ const About = () => {
         />
       </div>
 
-      {/* What I Love */}
-      <div className="my-10">
-        <h2 className="sub_heading">😍 What I Love</h2>
-        <p className="info text-justify">{what_i_love}</p>
+      {/* What I am Doing Now */}
+      <div className="my-8">
+        <h2 className="sub_heading">📝 Now</h2>
+        <p className="info text-justify">{current_activities}</p>
       </div>
 
       {/* My Hobbies */}
       <div className="my-2">
-        <h2 className="sub_heading">🎯 My Hobbies</h2>
+        <h2 className="sub_heading">🎯 Hobbies</h2>
         <p className="info text-justify">{my_hobbies}</p>
-      </div>
-
-      {/* Apps I Use Daily */}
-      <div className="my-10">
-        <h2 className="sub_heading">🛸 Apps I Use Daily</h2>
-        <p className="info text-justify">{apps_i_use}</p>
       </div>
 
       {/* My Learning Journey */}
