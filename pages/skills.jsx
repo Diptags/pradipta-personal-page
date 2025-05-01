@@ -45,7 +45,7 @@ const Skills = () => {
                 src={`/images/${skill.icon}`}
                 width={40}
                 height={40}
-                alt={skill.name}
+                alt={`skill-${skill.name}`}
               />
               <span className="text_tiny font-light opacity-0 group-hover:opacity-100">
                 {skill.name}

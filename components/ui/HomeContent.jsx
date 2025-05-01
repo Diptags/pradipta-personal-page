@@ -27,7 +27,11 @@ const SocialIcons = ({ socials }) => (
   <ul className="flex justify-center items-center gap-3 my-2">
     {socials?.map((platform) => (
       <li key={platform.id} className="social_icon">
-        <Link href={platform.link} target="_blank">
+        <Link
+          href={platform.link}
+          target="_blank"
+          aria-label={`Visit my ${platform.name} profile`}
+        >
           {socialIcons[platform.name] || <Github />}
         </Link>
       </li>

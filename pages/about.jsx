@@ -44,10 +44,10 @@ const Introduction = ({ name, about }) => (
 const InterestsList = ({ interest }) => (
   <ul>
     {interest.list.map((item, index) => (
-      <p key={index} className="info text-justify my-2 flex gap-3">
+      <li key={index} className="info text-justify my-2 flex gap-3">
         <ChevronsRight size={15} color={blue_3} />
         <span>{item}</span>
-      </p>
+      </li>
     ))}
   </ul>
 );
