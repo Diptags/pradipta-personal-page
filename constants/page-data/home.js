@@ -22,7 +22,7 @@ export const homePageData = {
   ],
 
   // Buttons and Links
-  buttons: ["Get My CV", "WhatsApp Me"],
+  buttons: ["My Resume", "Chat Me"],
   links: {
     resume: "https://docs.google.com/document/d/1p6R9KG3CNLVprYmi8uv_27uVoVy4W8IpolaG_Hodvow/edit?usp=sharing",
     whatsapp: "https://wa.link/tryppq",
