@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { site_metadata } from "@/constants";
 
 export const SeoMetadata = ({ title, desc }) => {
   return (
@@ -8,6 +9,7 @@ export const SeoMetadata = ({ title, desc }) => {
         name="description"
         content={desc || ""}
       />
+      <link rel="canonical" href={site_metadata?.hostname} />
     </Head>
   )
 }

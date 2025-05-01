@@ -8,7 +8,7 @@ export const ContactForm = ({ contactPageData }) => {
     useContact();
 
   return (
-    <form onSubmit={handleSubmit} className="md:w-[60%]">
+    <form onSubmit={handleSubmit}>
       <h2 className="sub_heading mr-2">
         <span>{contactPageData?.form_title}</span>
       </h2>

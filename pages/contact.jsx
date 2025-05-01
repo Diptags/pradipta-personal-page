@@ -31,19 +31,7 @@ const Contact = () => {
       </ul>
 
       {/* TODO: Integrate Contact Form With Database */}
-      <div className="md:flex md:gap-4 md:justify-between md:items-end">
-        <ContactForm contactPageData={contactPageData} />
-        <div className="hidden md:block">
-          <Image
-            src="/images/get-in-touch.png"
-            width={300}
-            height={150}
-            alt="Get in touch"
-            className="w-full"
-          />
-        </div>
-      </div>
-
+      <ContactForm contactPageData={contactPageData} />
     </section>
   );
 };

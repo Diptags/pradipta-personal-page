@@ -41,7 +41,6 @@ export default function App({ Component, pageProps }) {
         <meta name="theme-color" content={site_metadata?.theme} />
 
         {/*Link and Canonical Tags*/}
-        <link rel="canonical" href={site_metadata?.hostname} />
         <link rel="author" href="/humans.txt" />
         <link rel="icon" href="/favicon.ico" sizes="128x128" />
         <link rel="icon" href="/favicon.ico" sizes="256x256" />
