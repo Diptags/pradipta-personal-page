@@ -11,7 +11,7 @@ const skills = [
   { id: 2, name: "CSS", icon: "css3.svg" },
   { id: 3, name: "Javascript", icon: "javascript.svg" },
   { id: 4, name: "TypeScript", icon: "typescript.svg" },
-  { id: 5, name: "React & RN", icon: "react.svg" },
+  { id: 5, name: "React", icon: "react.svg" },
   { id: 6, name: "Figma", icon: "figma.svg" },
   { id: 7, name: "Redux", icon: "redux.svg" },
   { id: 8, name: "Next.js", icon: "nextjs.svg" },
@@ -25,7 +25,7 @@ const skills = [
 
   // Backend
   { id: 16, name: "Nodejs", icon: "nodejs.svg" },
-  { id: 17, name: "Express JS", icon: "express.svg" },
+  { id: 17, name: "Express", icon: "express.svg" },
   { id: 18, name: "Python", icon: "python.svg" },
   { id: 19, name: "Flask", icon: "flask.svg" },
   { id: 20, name: "Java", icon: "java.svg" },
@@ -35,12 +35,12 @@ const skills = [
 
   // Others
   { id: 24, name: "Jest", icon: "jest.svg" },
-  { id: 25, name: "Cocos Creator", icon: "cocos.png" },
+  { id: 25, name: "Cocos", icon: "cocos.png" },
   { id: 26, name: "Kotlin", icon: "kotlin.svg" },
   { id: 27, name: "Git", icon: "git.svg" },
   { id: 28, name: "Docker", icon: "docker.svg" },
   { id: 29, name: "Grafana", icon: "grafana.svg" },
-  { id: 30, name: "After Effect", icon: "aftereffect.svg" }
+  { id: 30, name: "AE", icon: "aftereffect.svg" }
 ];
 
 const others = [
