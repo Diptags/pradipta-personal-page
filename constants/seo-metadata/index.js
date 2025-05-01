@@ -6,7 +6,7 @@ export const site_metadata = {
   keywords: "rd pradipta gitaya samiadji, pradipta gitaya, pradiptagitaya, diptadipsi, pradipta, gitaya, samiadji, software engineer, software development, web developer, web development, full stack developer, full stack web developer, software engineer indonesia, software engineer jakarta",
   author: "Rd Pradipta Gitaya Samiadji",
   theme: "#f8f8f8",
-  hostname: "https://pradiptagitaya.com",
+  hostname: "https://pradipta.xyz",
   home: {
     title: "Rd Pradipta Gitaya S - Software Engineer, Writer, and Designer",
     desc: "I'm Rd Pradipta Gitaya Samiadji, a passionate Software Engineer, Writer, and Designer from Indonesia. I transform ideas into powerful systems, craft them into technical and blog content, and breathe life into designs through code. Open to collaborations, projects, and engaging discussions.",

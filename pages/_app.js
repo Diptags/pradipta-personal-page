@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }) {
         {/*Metadata for Open Graph and Twitter*/}
         <meta property="og:title" content={site_metadata?.title} />
         <meta property="og:description" content={site_metadata?.desc} />
-        <meta property="og:image" content="https://pradiptagitaya.com/og-image.png" />
+        <meta property="og:image" content="https://pradipta.xyz/og-image.png" />
 
         {/* <meta name="google-site-verification" content="" /> */}
 

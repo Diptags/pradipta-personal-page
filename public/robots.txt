@@ -4,4 +4,4 @@ Disallow:
 Disallow: /*.json
 Crawl-delay: 60
 
-Sitemap: https://pradiptagitaya.com/sitemap.xml
+Sitemap: https://pradipta.xyz/sitemap.xml
