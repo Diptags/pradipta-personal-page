@@ -11,8 +11,8 @@ export const homePageData = {
   greeting: "Welcome aboard!",
   tagline: "I transform ideas into systems, content, design, and code.",
   intro: `
-    I'm Rd Pradipta Gitaya Samiadji, a passionate Software Engineer, Writer, and Designer from Indonesia. 
-    I turn ideas into functional systems, create technical and blog content, and bring designs to life through code.
+    I'm Rd Pradipta Gitaya Samiadji (Pradipta), a passionate Software Engineer, Writer, and Designer from Indonesia. 
+    I turn ideas into functional code, create technical and blog content, and bring designs to life.
   `,
 
   // Current Status

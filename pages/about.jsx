@@ -42,7 +42,7 @@ const Introduction = ({ name, about }) => (
     <p
       className="info text-justify"
       dangerouslySetInnerHTML={{
-        __html: `Greetings! I'm <span class="font-bold">${name}</span>, ${about}`,
+        __html: `${about}`,
       }}
     />
   </div>

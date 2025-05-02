@@ -3,7 +3,7 @@ export const aboutPageData = {
   story_title: "👋🏽 Hi, Pradipta here!",
   name: "Rd Pradipta Gitaya Samiadji (Pradipta)",
   about: `
-    a software engineer driven by a passion for creating seamless, high-performing front-end experiences. I've had the opportunity to work with diverse technologies and in various environments.
+    I'm a Software Engineer driven by a passion for creating seamless, high-performing front-end experiences. I've had the opportunity to work with diverse technologies and various environments.
     Although front-end development is my main area of expertise, I excel as a generalist—bringing together full-stack skills to tackle complex problems.
     My experience in developer tooling has deepened my interest in building solutions that help fellow developers boost their efficiency and productivity.
     
