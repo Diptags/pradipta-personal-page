@@ -46,5 +46,30 @@ export const aboutPageData = {
     <br/><br/>
     Through this journey, I have come to understand that what matters most is not where you begin, but how persistent, curious, and open you are to every opportunity that comes your way. 
     My growth has been shaped by hands-on experience, insightful tutorials on YouTube, and a wide range of enriching resources that continue to fuel my passion for building, designing, and sharing ideas through technology.
-  `
+  `,
+  personal_info: {
+    title: "🧑🏻 Personal Info",
+    data: [
+      {
+        key: "phone",
+        label: "Phone",
+        value: "+6281218466075",
+      },
+      {
+        key: "email",
+        label: "Email",
+        value: "pradipta.samiadji@gmail.com",
+      },
+      {
+        key: "location",
+        label: "Location",
+        value: "Jakarta, Indonesia",
+      },
+      {
+        key: "gender",
+        label: "Gender",
+        value: "Male (He/Him)",
+      },
+    ]
+  }
 };

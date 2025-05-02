@@ -1,9 +1,16 @@
 import { PageTitle, SeoMetadata } from "@/components";
 import Link from "next/link";
-import { ChevronsRight, MoveUpRight } from "lucide-react";
+import { ChevronsRight, MoveUpRight, Phone, MailCheck, MapPin, Info } from "lucide-react";
 import { aboutPageData, site_metadata } from "@/constants";
-import { blue_3 } from "@/constants/colors";
+import { blue_3, orange_3 } from "@/constants/colors";
 import Image from "next/image";
+
+const personalInfoIcons = {
+  phone: <Phone color={orange_3} />,
+  email: <MailCheck color={orange_3} />,
+  location: <MapPin color={blue_3} />,
+  gender: <Info color={blue_3} />,
+};
 
 const SectionHeading = ({ title, children }) => (
   <div className="my-8">
@@ -52,11 +59,29 @@ const InterestsList = ({ interest }) => (
   </ul>
 );
 
+const PersonalInfoCard = ({ personalInfo }) => (
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-light_2 shadow-md rounded-lg p-4 my-2">
+    {personalInfo.map((info, index) => (
+      <div
+        key={index}
+        className="flex items-center gap-4 bg-gray-50 p-4 rounded-lg shadow-sm"
+      >
+        {personalInfoIcons[info.key]}
+        <div>
+          <p className="text-sm font-medium text-gray-500">{info.label}</p>
+          <p className="text-base font-semibold text-gray-800">{info.value}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+);
+
 const About = () => {
   const {
     title,
     story_title,
     name,
+    personal_info,
     about,
     current_activities,
     interest,
@@ -75,6 +100,12 @@ const About = () => {
 
       {/* Photo and Socials Section */}
       <PhotoAndSocials story_title={story_title} />
+
+      {/* Personal Info Card */}
+      <SectionHeading title={personal_info.title}>
+        <PersonalInfoCard personalInfo={personal_info.data} />
+      </SectionHeading>
+
 
       {/* Introduction */}
       <Introduction name={name} about={about} />
