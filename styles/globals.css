@@ -79,16 +79,16 @@
   }
 
   .resume_btn {
-    @apply flex items-center gap-2 bg-orange_3 text-white rounded py-2 px-6 transition cursor-pointer active:scale-90 hover:bg-blue_3;
+    @apply flex items-center gap-2 bg-brown_1 text-white rounded py-2 px-6 transition cursor-pointer active:scale-90 hover:bg-blue_3;
   }
 
   .whatsapp_me_btn {
-    @apply flex items-center gap-2 bg-blue_3 text-white rounded py-2 px-6 transition cursor-pointer active:scale-90 hover:bg-orange_3;
+    @apply flex items-center gap-2 bg-blue_3 text-white rounded py-2 px-6 transition cursor-pointer active:scale-90 hover:bg-brown_1;
   }
 
   /* About Page */
   .btn_link {
-    @apply flex gap-2 items-center rounded bg-orange_3 text-white px-4 py-2 transition duration-200 hover:scale-95;
+    @apply flex gap-2 items-center rounded bg-brown_1 text-white px-4 py-2 transition duration-200 hover:scale-95;
   }
 
   .btn_linkedin {
@@ -112,7 +112,7 @@
   }
 
   .send_btn {
-    @apply bg-blue_3 text-white rounded w-full px-4 py-2 flex justify-center items-center gap-2 transition duration-500 active:scale-95 hover:bg-orange_3;
+    @apply bg-blue_3 text-white rounded w-full px-4 py-2 flex justify-center items-center gap-2 transition duration-500 active:scale-95 hover:bg-brown_1;
   }
 
   .alternative_contact {

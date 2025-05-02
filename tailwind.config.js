@@ -1,4 +1,4 @@
-const { blue_1, blue_2, blue_3, orange_1, orange_2, orange_3, offwhite, light_1, light_2, light_3, dark_1, dark_2, dark_3 } = require('./constants/colors');
+const { blue_1, blue_2, blue_3, orange_1, orange_2, orange_3, brown_1, offwhite, light_1, light_2, light_3, dark_1, dark_2, dark_3 } = require('./constants/colors');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -22,6 +22,7 @@ module.exports = {
         orange_1,
         orange_2,
         orange_3,
+        brown_1,
         offwhite,
         light_1,
         light_2,

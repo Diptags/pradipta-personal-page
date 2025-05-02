@@ -42,13 +42,7 @@ const SocialIcons = ({ socials }) => (
 const GreetingSection = ({ greeting, tagline, intro }) => (
   <div className="flex-1">
     <span className="leading-7 flex items-center gap-2 font-light">
-      {greeting}
-      <Image
-        src="https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif"
-        width={20}
-        height={20}
-        alt="Waving Hand"
-      />
+      {greeting}👋🏽
     </span>
     <h1 className="text-black text-2xl font-poppins-bold">{tagline}</h1>
     <p className="font-poppins-medium text-justify my-6 leading-7 font-light">

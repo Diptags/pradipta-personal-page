@@ -1,11 +1,12 @@
 // Main Color Palette
 export const blue_1 = "#C3D7FF";
 export const blue_2 = "#8BB1FF";
-export const blue_3 = "#1080FF";
+export const blue_3 = "#0053B3";
 export const orange_1 = "#FFDABA";
 export const orange_2 = "#FEC17B";
 export const orange_3 = "#FC7B20";
 export const offwhite = "#D0DFFF";
+export const brown_1 = "#914003";
 
 // Additional Colors
 export const light_1 = "#f8f8f8";
