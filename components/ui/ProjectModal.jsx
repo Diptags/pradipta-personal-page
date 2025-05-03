@@ -1,6 +1,15 @@
 import React from "react";
-import { X } from "lucide-react";
+import { ChevronsRight, X } from "lucide-react";
 import Image from "next/image";
+import { blue_3 } from "@/constants/colors";
+
+const ContributionsList = ({ contributions }) => (
+  contributions.map((item, index) => (
+    <p key={index} className="info text-sm text-justify">
+      {`- ${item}`}
+    </p>
+  ))
+);
 
 export const ProjectModal = ({ toggleModal, project }) => {
   return (
@@ -14,28 +23,38 @@ export const ProjectModal = ({ toggleModal, project }) => {
         </button>
         <div className="mt-4 mb-2">
           <h3 className="sub_heading">
-            🎨 The Story of Building <span className="text text-orange_3">{project?.details?.title}</span>
+            🎨 The description of <span className="text text-orange_3">{project?.name}</span>
           </h3>
           <p className="info text-sm text-justify">{project?.details?.desc || ""}</p>
         </div>
 
         {/* Feature */}
-        <div className="mt-4">
-          <h4 className="sub_heading">Main Features</h4>
-          <ul className="">
-            {project?.details?.features.map(feature => (
-              <li key={feature} className="ml-4 my-2 text-sm">
-                {feature}
-              </li>
-            ))}
-          </ul>
-        </div>
+        {project.flags.is_show_features && (
+          <div className="mt-4">
+            <h4 className="sub_heading">Main Features</h4>
+            <ul className="">
+              {project?.details?.features.map(feature => (
+                <li key={feature} className="ml-4 my-2 text-sm">
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Contributions */}
+        {project.flags.is_show_contribution && (
+          <div className="mt-4">
+            <h4 className="sub_heading">My Contributions</h4>
+            <ContributionsList contributions={project.details.contributions} />
+          </div>
+        )}
 
         {/* Showcase */}
-        <div className="my-4">
+        <div className="my-5">
           <h4 className="sub_heading">Showcase</h4>
           <Image
-          className="w-fulls rounded-lg"
+            className="w-fulls rounded-lg mt-4"
             src={project?.showcase}
             width={1920}
             height={1080}

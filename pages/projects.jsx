@@ -5,7 +5,7 @@ const { title, projects } = projectPageData;
 
 const renderProjects = () => {
   return projects?.map(project => {
-    if (project.is_full_version) {
+    if (project.flags.is_full_version) {
       return (
         <ProjectCard key={project.id} project={project} />
       );

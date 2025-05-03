@@ -57,38 +57,44 @@ export const ProjectCard = ({ project }) => {
 
       {/* Actions */}
       <ul className="pb-4 pr-4 flex gap-4 justify-end items-center gap-2">
+
         {/* GitHub Link */}
-        <li>
-          <Link
-            target="_blank"
-            href={project?.links?.github || ""}
-            aria-label={`View ${project?.name || "project"} on GitHub`}
-          >
-            <button
-              className="cursor-pointer transition duration-300 hover:scale-125"
-              type="button"
-              aria-label="Project Repository URL"
+        {project.flags.is_show_repo_url && (
+          <li>
+            <Link
+              target="_blank"
+              href={project?.links?.github || ""}
+              aria-label={`View ${project?.name || "project"} on GitHub`}
             >
-              <Github size={25} />
-            </button>
-          </Link>
-        </li>
+              <button
+                className="cursor-pointer transition duration-300 hover:scale-125"
+                type="button"
+                aria-label="Project Repository URL"
+              >
+                <Github size={25} />
+              </button>
+            </Link>
+          </li>
+        )}
 
         {/* Live Demo Link */}
-        <li>
-          <Link
-            target="_blank"
-            href={project?.links?.live || ""}
-          >
-            <button
-              className="cursor-pointer transition duration-300 hover:scale-125"
-              type="button"
-              aria-label="Project Live URL"
+        {project.flags.is_show_demo_url && (
+          <li>
+            <Link
+              target="_blank"
+              href={project?.links?.live || ""}
             >
-              <ExternalLink size={25} />
-            </button>
-          </Link>
-        </li>
+              <button
+                className="cursor-pointer transition duration-300 hover:scale-125"
+                type="button"
+                aria-label="Project Live URL"
+              >
+                <ExternalLink size={25} />
+              </button>
+            </Link>
+          </li>
+        )}
+
 
         {/* More Info Button */}
         <li>
