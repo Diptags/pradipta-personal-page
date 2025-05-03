@@ -32,7 +32,7 @@ export const ProjectModal = ({ toggleModal, project }) => {
         </div>
 
         {/* Showcase */}
-        <div className="mt-4">
+        <div className="my-4">
           <h4 className="sub_heading">Showcase</h4>
           <Image
           className="w-fulls rounded-lg"
