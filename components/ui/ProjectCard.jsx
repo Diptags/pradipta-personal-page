@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github, ExternalLink, Info, Star, Blocks } from "lucide-react";
+import { Github, ExternalLink, Info } from "lucide-react";
 import Image from "next/image";
 import { ProjectModal } from "@/components";
 import { useState } from "react";
@@ -19,7 +19,7 @@ export const ProjectCard = ({ project }) => {
   const [openModal, setOpenModal] = useState(false);
 
   const toggleModal = () => {
-    setOpenModal(curr => !curr);
+    setOpenModal((curr) => !curr);
   };
 
   return (
@@ -31,16 +31,16 @@ export const ProjectCard = ({ project }) => {
             src={project?.cover}
             width={600}
             height={300}
-            alt={project?.name}
+            alt={project?.name || "Project Cover"}
           />
         </div>
 
         {/* Project Info */}
         <div className="p-4 relative">
           <div className="mb-2 border-b-[.7px] border-gray-700/20">
-            <h3 className="text-xl font-poppins-bold">{project?.name}</h3>
+            <p className="text-xl font-poppins-bold">{project?.name}</p>
             <div className="my-2 flex gap-2 flex-wrap">
-              {project?.technologies?.map(tech => (
+              {project?.technologies?.map((tech) => (
                 <span key={tech.name} className={tech.style}>
                   {tech.name}
                 </span>
@@ -50,25 +50,36 @@ export const ProjectCard = ({ project }) => {
 
           <div className="relative">
             <div className="project_card_gradient"></div>
-            <p className="relative">{project?.desc}</p>
+            <p className="text-justify">{project?.desc}</p>
           </div>
         </div>
       </div>
 
       {/* Actions */}
       <ul className="pb-4 pr-4 flex gap-4 justify-end items-center gap-2">
-        <li className="">
-          <Link target="_blank" href={project?.links?.github || ""}>
+        {/* GitHub Link */}
+        <li>
+          <Link
+            target="_blank"
+            href={project?.links?.github || ""}
+            aria-label={`View ${project?.name || "project"} on GitHub`}
+          >
             <button
               className="cursor-pointer transition duration-300 hover:scale-125"
               type="button"
             >
-              <Github size={23} />
+              <Github size={25} />
             </button>
           </Link>
         </li>
-        <li className="">
-          <Link target="_blank" href={project?.links?.live || ""}>
+
+        {/* Live Demo Link */}
+        <li>
+          <Link
+            target="_blank"
+            href={project?.links?.live || ""}
+            aria-label={`View live demo of ${project?.name || "project"}`}
+          >
             <button
               className="cursor-pointer transition duration-300 hover:scale-125"
               type="button"
@@ -78,11 +89,13 @@ export const ProjectCard = ({ project }) => {
           </Link>
         </li>
 
+        {/* More Info Button */}
         <li>
           <button
             onClick={toggleModal}
             className="cursor-pointer transition duration-300 hover:scale-125"
             type="button"
+            aria-label={`More information about ${project?.name || "project"}`}
           >
             <Info size={25} />
           </button>

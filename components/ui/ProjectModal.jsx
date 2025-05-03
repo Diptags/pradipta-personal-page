@@ -13,14 +13,14 @@ export const ProjectModal = ({ toggleModal, project }) => {
         </button>
         <div className="mt-4 mb-2">
           <h3 className="sub_heading">
-            🔴 Unveiling the Journey of Building <span className="gradient_text">{project?.details?.title}</span>
+            🎨 The Story of Building <span className="text text-orange_3">{project?.details?.title}</span>
           </h3>
-          <p className="info text-sm">{project?.details?.desc || ""}</p>
+          <p className="info text-sm text-justify">{project?.details?.desc || ""}</p>
         </div>
 
         {/* Feature */}
         <div className="mt-4">
-          <h4 className="sub_heading">Features</h4>
+          <h4 className="sub_heading">Main Features</h4>
           <ul className="">
             {project?.details?.features.map(feature => (
               <li key={feature} className="ml-4 my-2 text-sm">

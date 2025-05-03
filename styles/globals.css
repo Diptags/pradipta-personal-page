@@ -38,12 +38,12 @@
   }
 
   .gradient_text {
-    @apply bg-gradient-to-r from-fuchsia-500 to-purple-600 bg-clip-text text-transparent w-fit;
+    @apply bg-gradient-to-r bg-clip-text text-transparent w-fit;
   }
 
   /* Technology Badge */
   .badge_react {
-    @apply flex items-center rounded px-2 bg-purple-100 text-purple-700;
+    @apply flex items-center rounded px-2;
     font-size: 12px;
   }
   .badge_tailwind {
@@ -116,16 +116,16 @@
   }
 
   .alternative_contact {
-    @apply px-2 text-orange-400 active:bg-purple-700/20;
+    @apply px-2 text-orange-400;
   }
 
   /* Project */
   .project_card {
-    @apply rounded-2xl border-[.5px] border-gray-700/20 overflow-hidden active:bg-purple-600/10;
+    @apply rounded-2xl border-[2px] border-gray-700/20 overflow-hidden;
   }
 
   .project_card_gradient {
-    @apply absolute top-4 left-0 w-full h-[80%] bg-gradient-to-br from-fuchsia-400 to-purple-600 opacity-20 blur-2xl -z-20;
+    @apply absolute top-4 left-0 w-full h-[80%] bg-gradient-to-br from-orange-400 to-blue-600 opacity-20 blur-2xl -z-20;
   }
   
   .project_modal_container{
