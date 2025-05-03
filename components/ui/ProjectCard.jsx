@@ -67,6 +67,7 @@ export const ProjectCard = ({ project }) => {
             <button
               className="cursor-pointer transition duration-300 hover:scale-125"
               type="button"
+              aria-label="Project Repository URL"
             >
               <Github size={25} />
             </button>
@@ -78,11 +79,11 @@ export const ProjectCard = ({ project }) => {
           <Link
             target="_blank"
             href={project?.links?.live || ""}
-            aria-label={`View live demo of ${project?.name || "project"}`}
           >
             <button
               className="cursor-pointer transition duration-300 hover:scale-125"
               type="button"
+              aria-label="Project Live URL"
             >
               <ExternalLink size={25} />
             </button>
@@ -95,7 +96,7 @@ export const ProjectCard = ({ project }) => {
             onClick={toggleModal}
             className="cursor-pointer transition duration-300 hover:scale-125"
             type="button"
-            aria-label={`More information about ${project?.name || "project"}`}
+            aria-label="Project Detail"
           >
             <Info size={25} />
           </button>
