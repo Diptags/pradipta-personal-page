@@ -43,15 +43,11 @@
 
   /* Technology Badge */
   .badge_react {
-    @apply flex items-center rounded px-2;
-    font-size: 12px;
-  }
-  .badge_tailwind {
     @apply flex items-center rounded px-2 bg-sky-100 text-sky-700;
     font-size: 12px;
   }
-  .badge_react_query {
-    @apply flex items-center rounded px-2 bg-rose-100 text-rose-700;
+  .badge_tailwind {
+    @apply flex items-center rounded px-2 bg-cyan-200 text-cyan-800;
     font-size: 12px;
   }
   .badge_nextjs {
@@ -68,6 +64,10 @@
   }
   .badge_mongo {
     @apply flex items-center rounded px-2 bg-green-100 text-green-700;
+    font-size: 12px;
+  }
+  .badge_project_type {
+    @apply flex items-center rounded px-2 bg-rose-100 text-rose-700;
     font-size: 12px;
   }
 
