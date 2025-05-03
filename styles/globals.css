@@ -67,7 +67,7 @@
     font-size: 12px;
   }
   .badge_mongo {
-    @apply flex items-center rounded px-2 bg-green-300 text-green-700;
+    @apply flex items-center rounded px-2 bg-green-100 text-green-700;
     font-size: 12px;
   }
 

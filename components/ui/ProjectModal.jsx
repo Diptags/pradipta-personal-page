@@ -1,5 +1,6 @@
 import React from "react";
 import { X } from "lucide-react";
+import Image from "next/image";
 
 export const ProjectModal = ({ toggleModal, project }) => {
   return (
@@ -28,6 +29,18 @@ export const ProjectModal = ({ toggleModal, project }) => {
               </li>
             ))}
           </ul>
+        </div>
+
+        {/* Showcase */}
+        <div className="mt-4">
+          <h4 className="sub_heading">Showcase</h4>
+          <Image
+          className="w-fulls rounded-lg"
+            src={project?.showcase}
+            width={1920}
+            height={1080}
+            alt={project?.name || "Project Showcase"}
+          />
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 export const projectPageData = {
-  title: "Projects and Researches",
+  title: "Project Showcases",
   intro:
     "In this page. you can explore my projects & researches, where ideas meet execution through clean code and thoughtful design. If you have any questions or want to collaborate, feel free to reach out!",
   projects: [
@@ -7,6 +7,7 @@ export const projectPageData = {
       id: 1,
       is_full_version: true,
       cover: "/images/project_images/personal-page.png",
+      showcase: "/images/project_images/personal-page-showcase.png",
       name: "Personal Website",
       desc: "My personal portfolio website built with Next.js & Tailwind CSS. It showcases my skills, projects, and experiences. The design is simple yet elegant, showcasing my journey as a software engineer, writer, and designer.",
       technologies: [
