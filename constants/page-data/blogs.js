@@ -4,7 +4,7 @@ const intro = `
   Whether you're here out of curiosity, looking for inspiration, or simply exploring new perspectives, I hope you find something meaningful here.
 `
 
-const blogTitle = "✍️ I usually write blogs on those platforms: ";
+const blogTitle = "✍️ Let's visit my writings here: ";
 
 const blogPlatforms = [
   {
