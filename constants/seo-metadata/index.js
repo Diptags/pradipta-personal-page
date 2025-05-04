@@ -1,4 +1,4 @@
-const METADATA_DESC = "I’m Rd Pradipta Gitaya Samiadji (He/Him), a software engineer with 4+ years of experience building scalable, user-focused solutions. I hold a Computer Science degree from Universitas Indonesia and am passionate about coding, design, writing, and exploring diverse tech domains.";
+const METADATA_DESC = "I amm Rd Pradipta (He/Him), a software engineer with 4+ years of experience building scalable, user-focused solutions. I am also writer and designer.";
 
 export const site_metadata = {
   title: "Rd Pradipta Gitaya Samiadji - Software Engineer, Writer, and Designer",
