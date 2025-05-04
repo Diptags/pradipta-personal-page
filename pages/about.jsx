@@ -1,9 +1,9 @@
 import { PageTitle, SeoMetadata } from "@/components";
-import Link from "next/link";
-import { ChevronsRight, MoveUpRight, Phone, MailCheck, MapPin, Info } from "lucide-react";
+import { ChevronsRight, Phone, MailCheck, MapPin, Info } from "lucide-react";
 import { aboutPageData, site_metadata } from "@/constants";
 import { blue_3, orange_3 } from "@/constants/colors";
 import Image from "next/image";
+import { FooterButton } from "@/components/shared/FooterButton";
 
 const personalInfoIcons = {
   phone: <Phone color={orange_3} />,
@@ -136,13 +136,8 @@ const About = () => {
         />
       </SectionHeading>
 
-      {/* Link to Skills Page */}
-      <Link className="inline-block" href="/skills">
-        <button className="btn_link" type="button">
-          My Skills & Knowledge
-          <MoveUpRight size={18} />
-        </button>
-      </Link>
+      {/* Link to the Skills Page */}
+      <FooterButton path={"/skills"} title={"My Skills & Knowledge"} />
     </section>
   );
 };

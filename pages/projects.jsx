@@ -1,4 +1,5 @@
 import { PageTitle, ProjectCard, ProjectList, SeoMetadata } from "@/components";
+import { FooterButton } from "@/components/shared/FooterButton";
 import { projectPageData, site_metadata } from "@/constants";
 
 const { title, projects } = projectPageData;
@@ -29,6 +30,9 @@ const Project = () => {
           {renderProjects()}
         </ul>
       </div>
+
+      {/* Link to the Blogs Page */}
+      <FooterButton path="/blogs" title="My Blog Posts" />
     </section>
   );
 };

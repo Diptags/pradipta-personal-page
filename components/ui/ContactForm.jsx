@@ -52,7 +52,7 @@ export const ContactForm = ({ contactPageData }) => {
           value={formData?.message}
         ></textarea>
       </div>
-      <button className="send_btn group" type="submit" disabled={isSending}>
+      <button className="send_btn group mb-8" type="submit" disabled={isSending}>
         <ClipLoader
           color="#f8f8f8"
           loading={isSending}
