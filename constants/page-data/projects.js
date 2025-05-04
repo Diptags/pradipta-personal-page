@@ -36,7 +36,7 @@ export const projectPageData = {
         }
       ],
       links: {
-        github: "https://github.com/fazle-rabbi-dev/fazle-rabbi-dev.vercel.app",
+        github: "https://github.com/Diptags/pradipta-personal-page",
         live: "https://pradipta.xyz"
       },
       details: {
