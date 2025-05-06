@@ -103,6 +103,47 @@ export const projectPageData = {
         ],
       },
     },
+    {
+      id: 3,
+      cover: "/images/project_images/sos-game.png",
+      showcases: ["/images/project_images/sos-game-showcase.png"],
+      flags: {
+        is_full_version: true,
+        is_show_repo_url: true,
+        is_show_demo_url: false,
+        is_show_contribution: false,
+        is_show_features: true,
+      },
+      name: "SOS Game",
+      type: "Personal Creation", // TODO: Make this into enum
+      desc: "A Simple Game built by using ReactJS as a frontend framework. This game is Tic-Tac-Toe familiar, but players have to create an SOS word in order to get points, the player who had the most points wins. Built using ReactJS",
+      technologies: [
+        {
+          name: "React",
+          style: "badge_react"
+        },
+      ],
+      links: {
+        github: "https://gitlab.com/rd.pradipta/sos-game/",
+        live: ""
+      },
+      details: {
+        desc: `
+        This is actually my first project using ReactJS, and I built this game as a personal project to learn ReactJS.
+        I was inspired by the game Tic-Tac-Toe, but I wanted to create a game that was more fun and engaging.
+        So, I decided to create a game where players have to create the word SOS in order to get points.
+        The player who has the most points wins the game.
+        `,
+        features: [
+          "🎳 Fun and playable for 2 Players",
+          "🧠 Stimulates thiking process",
+          "💻 Amazing User Interface",
+        ],
+        contributions: [],
+      },
+    },
+
+    // Shopee Projects
     // {
     //   id: 3,
     //   cover: "/images/project_images/bvgc.png",
@@ -197,8 +238,8 @@ export const projectPageData = {
     // },
     // {
     //   id: 5,
-    //   cover: "/images/project_images/luckydraw.png",
-    //   showcases: ["/images/project_images/luckydraw-showcase.png", "/images/project_images/luckydraw-showcase-2.png"],
+    //   cover: "/images/project_images/stamp.png",
+    //   showcases: ["/images/project_images/stamp-showcase.png"],
     //   flags: {
     //     is_full_version: true,
     //     is_show_repo_url: false,
@@ -206,7 +247,7 @@ export const projectPageData = {
     //     is_show_contribution: true,
     //     is_show_features: false,
     //   },
-    //   name: "Shopee Lucky Draw",
+    //   name: "Shopee Buyer Quest (Stamp)",
     //   type: "Project Contributions - Corporate", // TODO: Make this into enum
     //   desc: "Shopee Lucky Draw is a gamification project that allows users to win prizes through participation, currently running on production and serving users from various regions. This project is developed using React, React Native and TypeScript.",
     //   technologies: [
