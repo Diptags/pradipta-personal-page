@@ -4,6 +4,17 @@ import Image from "next/image";
 import { ProjectModal } from "@/components";
 import { useState } from "react";
 
+// These for dynamic style
+const badge = [
+  "badge_react",
+  "badge_tailwind",
+  "badge_react_query",
+  "badge_nextjs",
+  "badge_firebase",
+  "badge_node",
+  "badge_mongo",
+];
+
 const ProjectActions = ({ project, toggleModal }) => (
   <ul className="pb-4 pr-4 flex gap-4 justify-end items-center">
     {/* Git Repository Link */}
