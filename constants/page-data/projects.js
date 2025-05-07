@@ -14,7 +14,7 @@ export const projectPageData = {
         is_show_contribution: false,
         is_show_features: true,
       },
-      name: "Personal Website",
+      name: "Personal Portfolio Website",
       type: "Personal Creation", // TODO: Make this into enum
       desc: "My personal portfolio website built with Next.js & Tailwind CSS. It showcases my skills, projects, and experiences. The design is simple yet elegant, showcasing my journey as a software engineer, writer, and designer.",
       technologies: [
