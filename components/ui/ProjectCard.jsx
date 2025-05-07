@@ -8,7 +8,6 @@ import { useState } from "react";
 const badge = [
   "badge_react",
   "badge_tailwind",
-  "badge_react_query",
   "badge_nextjs",
   "badge_firebase",
   "badge_node",
@@ -23,11 +22,12 @@ const ProjectActions = ({ project, toggleModal }) => (
         <Link
           target="_blank"
           href={project?.links?.github || ""}
-          aria-label={`View ${project?.name || "project"} on GitHub`}
+          aria-label={`Link view ${project?.name || "project"} Repository`}
         >
           <button
             className="cursor-pointer transition duration-300 hover:scale-125"
             type="button"
+            aria-label={`Button view ${project?.name || "project"} Repository`}
           >
             <Github size={25} />
           </button>
@@ -41,11 +41,12 @@ const ProjectActions = ({ project, toggleModal }) => (
         <Link
           target="_blank"
           href={project?.links?.live || ""}
-          aria-label={`View live demo of ${project?.name || "project"}`}
+          aria-label={`Link live demo of ${project?.name || "project"}`}
         >
           <button
             className="cursor-pointer transition duration-300 hover:scale-125"
             type="button"
+            aria-label={`Button live demo of ${project?.name || "project"}`}
           >
             <ExternalLink size={25} />
           </button>

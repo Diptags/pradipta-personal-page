@@ -60,6 +60,61 @@ export const projectPageData = {
     },
     {
       id: 2,
+      cover: "/images/project_images/skulite.png",
+      showcases: ["/images/project_images/skulite-showcase.png"],
+      flags: {
+        is_full_version: true,
+        is_show_repo_url: true,
+        is_show_demo_url: true,
+        is_show_contribution: true,
+        is_show_features: true,
+      },
+      name: "Skulite",
+      type: "Project Contribution - Team", // TODO: Make this into enum
+      desc: "Skulite is a Progressive Web App (PWA) designed to assist students who lack sufficient resources for online learning by helping them locate the nearest study spots, making their learning experience smoother even during the challenges of the COVID-19 pandemic.",
+      technologies: [
+        {
+          name: "VueJS",
+          style: "badge_mongo"
+        },
+        {
+          name: "Django",
+          style: "badge_tailwind"
+        },
+        {
+          name: "PostgreSQL",
+          style: "badge_react"
+        },
+      ],
+      links: {
+        github: "https://drive.google.com/file/d/1uWklrmCTaTLa5i8v7TPfP0P7GoHK-0S1/view?usp=sharing",
+        live: "https://skulite.netlify.app/"
+      },
+      details: {
+        desc: `
+          Skulite is a PWA (Progressive Web App) based application that helps students that do not have enough facilities to do online learning find the nearest learning places in order to make their learning journey easier despite the COVID-19 pandemic situation.
+          This is a project for the preliminary round of the GEMASTIK 13 (2020) Software Development competition category. 
+          Skulite was developed by using Vue.js to build a Frontend system, Django Framework for Backend combined with REST API and PostgreSQL as Relational Database Management System.
+        `,
+        features: [
+          "💻 Authentication Page & Home Page",
+          "🔎 Search for Nearbly Study Places and Tutors",
+          "🏠 Study Place Exploration",
+          "🕒 Learning Place Availability Schedule & House Rules",
+          "💵 Donation for Learning Place or Tutor",
+          "👨‍👩‍👧‍👦 User Profile and Parental Controls"
+        ],
+        contributions: [
+          "Collaborated with the team to discuss all requirements, technology stacks, and project architecture.",
+          "Contributed in the development of the application proposal and project documentation.",
+          "Contributed in the development of the application UI design and layout using Figma.",
+          "Collaborated in the development the frontend system using Vue.js.",
+          "Intensive testing and bugfixes."
+        ],
+      },
+    },
+    {
+      id: 3,
       cover: "/images/project_images/pss-game.png",
       showcases: ["/images/project_images/pss-game-showcase.png"],
       flags: {
@@ -104,7 +159,7 @@ export const projectPageData = {
       },
     },
     {
-      id: 3,
+      id: 4,
       cover: "/images/project_images/sos-game.png",
       showcases: ["/images/project_images/sos-game-showcase.png"],
       flags: {
@@ -142,6 +197,7 @@ export const projectPageData = {
         contributions: [],
       },
     },
+
 
     // Shopee Projects
     // {

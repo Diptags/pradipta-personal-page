@@ -132,8 +132,8 @@
     @apply overflow-auto fixed z-50 top-0 bottom-0 left-0 right-0 w-full flex justify-center items-start bg-dark_3/40
   }
   
-  .project_modal{
-    @apply relative bg-light_1 mx-4 my-4 p-4 rounded-2xl md:mx-0 md:max-w-3xl
+  .project_modal {
+    @apply relative bg-light_1 mx-4 my-4 p-4 rounded-2xl md:mx-0 md:max-w-5xl;
   }
     
   /* Blogs */
