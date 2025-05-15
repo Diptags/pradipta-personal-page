@@ -133,7 +133,7 @@
   }
   
   .project_modal {
-    @apply relative bg-light_1 mx-4 my-4 p-4 rounded-2xl md:mx-0 md:max-w-5xl;
+    @apply relative bg-light_1 mx-4 my-4 p-4 rounded-2xl md:mx-0 md:max-w-6xl;
   }
     
   /* Blogs */

@@ -1,5 +1,5 @@
 export const projectPageData = {
-  title: "Project & Contributions",
+  title: "Project Highlights",
   intro:
     "In this page. you can explore projects & other things that I have contributed, where ideas meet execution through clean code and thoughtful design. If you have any questions or want to collaborate, feel free to reach out!",
   projects: [
