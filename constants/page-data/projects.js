@@ -5,6 +5,54 @@ export const projectPageData = {
   projects: [
     {
       id: 1,
+      cover: "/images/project_images/mail-hosting.png",
+      showcases: [
+        "/images/project_images/mail-hosting-showcase-1.png",
+        "/images/project_images/mail-hosting-showcase-2.png"],
+      flags: {
+        is_full_version: true,
+        is_show_repo_url: false,
+        is_show_demo_url: true,
+        is_show_contribution: false,
+        is_show_features: true,
+      },
+      name: "Mail Hosting Design Prototype",
+      type: "Personal Creation", // TODO: Make this into enum
+      desc: "A Mail Hosting Dashboard designed with two main interfaces. Admin Dashboard enables easy mailboxes, domains, users, and security management, offering system insights, logs, and tools. The Webmail Dashboard provides end users with a clean, responsive interface for managing emails, composing messages complete with light/dark modes and intuitive navigation.",
+      technologies: [
+        {
+          name: "Figma",
+          style: "badge_tailwind"
+        },
+        {
+          name: "Wireframe",
+          style: "badge_nextjs"
+        },
+      ],
+      links: {
+        github: "",
+        live: "https://www.figma.com/proto/ZjM0GWIhKrxcBvJvLGexgR/Mail-Hosting-System---Rd-Pradipta?node-id=24-2&p=f&t=fcqz2llvRoDgCELz-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=24%3A2&show-proto-sidebar=1"
+      },
+      details: {
+        desc: `
+        A Mail Hosting Dashboard designed with two main interfaces: Admin Dashboard and Webmail.
+        The Admin Dashboard enables efficient management of mailboxes, domains, users, and security settings, offering real-time system insights, activity logs, and configuration tools.
+        The Webmail Dashboard provides end users with a clean, responsive interface for managing emails, composing messages, and accessing support—complete with light/dark modes and intuitive navigation.
+        This project comes in several deliverables: Wireframe, High Fidelity Design, and Prototype
+        `,
+        features: [
+          "💻 Amazing and Interactive User Interface",
+          "🧠 Power User In Mind",
+          "⚙️ Provide advanced configuration tools for seamless mail hosting management",
+          "🔗 Wireframe Link: https://s.id/mail-hosting-wireframe",
+          "🔗 High Fidelity Design Link: https://s.id/mail-hosting-full-design",
+          "🔗 Prototype Link: https://s.id/mail-hosting-prototype",
+        ],
+        contributions: [],
+      },
+    },
+    {
+      id: 2,
       cover: "/images/project_images/personal-page.png",
       showcases: ["/images/project_images/personal-page-showcase.png"],
       flags: {
@@ -59,7 +107,7 @@ export const projectPageData = {
       },
     },
     {
-      id: 2,
+      id: 3,
       cover: "/images/project_images/skulite.png",
       showcases: ["/images/project_images/skulite-showcase.png"],
       flags: {
@@ -114,7 +162,7 @@ export const projectPageData = {
       },
     },
     {
-      id: 3,
+      id: 4,
       cover: "/images/project_images/pss-game.png",
       showcases: ["/images/project_images/pss-game-showcase.png"],
       flags: {
@@ -159,7 +207,7 @@ export const projectPageData = {
       },
     },
     {
-      id: 4,
+      id: 5,
       cover: "/images/project_images/sos-game.png",
       showcases: ["/images/project_images/sos-game-showcase.png"],
       flags: {
@@ -197,6 +245,7 @@ export const projectPageData = {
         contributions: [],
       },
     },
+
 
 
     // Shopee Projects
@@ -248,7 +297,7 @@ export const projectPageData = {
     // {
     //   id: 4,
     //   cover: "/images/project_images/luckydraw.png",
-    //   showcases: ["/images/project_images/luckydraw-showcase.png", "/images/project_images/luckydraw-showcase-2.png"],
+    //   showcases: ["/images/project_images/luckydraw-showcase-1.png", "/images/project_images/luckydraw-showcase-2.png"],
     //   flags: {
     //     is_full_version: true,
     //     is_show_repo_url: false,
