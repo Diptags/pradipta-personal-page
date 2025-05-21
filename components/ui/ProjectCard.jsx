@@ -69,7 +69,7 @@ const ProjectActions = ({ project, toggleModal }) => (
 );
 
 const ProjectInfo = ({ project }) => (
-  <div className="p-4 relative">
+  <div className="p-4 relative h-[300px] overflow-hidden">
     <div className="mb-2 border-b-[.7px] border-gray-700/20">
       <p className="text-xl font-poppins-bold">{project?.name}</p>
 
@@ -104,7 +104,7 @@ export const ProjectCard = ({ project }) => {
   };
 
   return (
-    <li className="group project_card">
+    <li className="project_card">
       {/* Project Cover */}
       <div onClick={toggleModal}>
         <div className="overflow-hidden">

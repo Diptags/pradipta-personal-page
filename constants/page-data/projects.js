@@ -19,7 +19,7 @@ export const projectPageData = {
       },
       name: "Mail Hosting Design Prototype",
       type: "Personal Creation", // TODO: Make this into enum
-      desc: "A Mail Hosting Dashboard designed with two main interfaces. Admin Dashboard enables easy mailboxes, domains, users, and security management, offering system insights, logs, and tools. The Webmail Dashboard provides end users with a clean, responsive interface for managing emails, composing messages complete with light/dark modes and intuitive navigation.",
+      desc: "A Mail Hosting Dashboard with two main interfaces: the Admin Dashboard for managing mailboxes, domains, users, and security, and the Webmail Dashboard for end users to access and manage emails with a clean, responsive UI and light/dark modes.",
       technologies: [
         {
           name: "Figma",
