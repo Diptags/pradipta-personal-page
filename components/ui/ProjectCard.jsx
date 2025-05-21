@@ -104,7 +104,7 @@ export const ProjectCard = ({ project }) => {
   };
 
   return (
-    <li className="project_card">
+    <li className="group project_card">
       {/* Project Cover */}
       <div onClick={toggleModal}>
         <div className="overflow-hidden">
