@@ -1,4 +1,12 @@
-import { Download, ChevronsRight, Phone, Linkedin, Instagram, Github, Gitlab } from "lucide-react";
+import {
+  Download,
+  ChevronsRight,
+  Phone,
+  Linkedin,
+  Instagram,
+  Github,
+  Gitlab,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useSpring, animated } from "react-spring";
@@ -93,7 +101,6 @@ export const HomeContent = () => {
     <section className="relative min-h-screen md:flex md:justify-center md:items-center sm:max-w-3xl">
       <animated.div className="transition duration-100" style={pageAnim}>
         <div className="gap-5 md:flex-row-reverse md:justify-between flex flex-col items-center">
-
           <div className="flex flex-col item-center">
             <ProfilePhoto photo={photo} />
             <SocialIcons socials={socials} />

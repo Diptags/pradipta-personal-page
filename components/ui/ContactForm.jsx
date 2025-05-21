@@ -4,8 +4,7 @@ import { useContact } from "@/hooks/useContact";
 import ClipLoader from "react-spinners/ClipLoader";
 
 export const ContactForm = ({ contactPageData }) => {
-  const { formData, handleChange, handleSubmit, isSending } =
-    useContact();
+  const { formData, handleChange, handleSubmit, isSending } = useContact();
 
   return (
     <form onSubmit={handleSubmit}>
@@ -52,7 +51,11 @@ export const ContactForm = ({ contactPageData }) => {
           value={formData?.message}
         ></textarea>
       </div>
-      <button className="send_btn group mb-8" type="submit" disabled={isSending}>
+      <button
+        className="send_btn group mb-8"
+        type="submit"
+        disabled={isSending}
+      >
         <ClipLoader
           color="#f8f8f8"
           loading={isSending}

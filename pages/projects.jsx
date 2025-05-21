@@ -5,24 +5,21 @@ import { projectPageData, site_metadata } from "@/constants";
 const { title, projects } = projectPageData;
 
 const renderProjects = () => {
-  return projects?.map(project => {
+  return projects?.map((project) => {
     if (project.flags.is_full_version) {
-      return (
-        <ProjectCard key={project.id} project={project} />
-      );
-    } return (
-      <ProjectList
-        key={project.id}
-        {...project}
-      />
-    )
+      return <ProjectCard key={project.id} project={project} />;
+    }
+    return <ProjectList key={project.id} {...project} />;
   });
 };
 
 const Project = () => {
   return (
     <section className="sm:max-w-3xl">
-      <SeoMetadata title={site_metadata?.project?.title} desc={site_metadata?.project?.desc} />
+      <SeoMetadata
+        title={site_metadata?.project?.title}
+        desc={site_metadata?.project?.desc}
+      />
       <PageTitle title={title} effect="blue" />
       <p className="info text-justify">{projectPageData?.intro}</p>
       <div className="my-5">

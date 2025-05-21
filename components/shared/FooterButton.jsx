@@ -9,5 +9,5 @@ export const FooterButton = ({ path, title }) => {
         <MoveUpRight size={18} />
       </button>
     </Link>
-  )
-}
+  );
+};

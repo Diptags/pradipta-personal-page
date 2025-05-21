@@ -8,7 +8,8 @@ export const projectPageData = {
       cover: "/images/project_images/mail-hosting.png",
       showcases: [
         "/images/project_images/mail-hosting-showcase-1.png",
-        "/images/project_images/mail-hosting-showcase-2.png"],
+        "/images/project_images/mail-hosting-showcase-2.png",
+      ],
       flags: {
         is_full_version: true,
         is_show_repo_url: false,
@@ -22,16 +23,16 @@ export const projectPageData = {
       technologies: [
         {
           name: "Figma",
-          style: "badge_tailwind"
+          style: "badge_tailwind",
         },
         {
           name: "Wireframe",
-          style: "badge_nextjs"
+          style: "badge_nextjs",
         },
       ],
       links: {
         github: "",
-        live: "https://www.figma.com/proto/ZjM0GWIhKrxcBvJvLGexgR/Mail-Hosting-System---Rd-Pradipta?node-id=24-2&p=f&t=fcqz2llvRoDgCELz-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=24%3A2&show-proto-sidebar=1"
+        live: "https://www.figma.com/proto/ZjM0GWIhKrxcBvJvLGexgR/Mail-Hosting-System---Rd-Pradipta?node-id=24-2&p=f&t=fcqz2llvRoDgCELz-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=24%3A2&show-proto-sidebar=1",
       },
       details: {
         desc: `
@@ -68,24 +69,24 @@ export const projectPageData = {
       technologies: [
         {
           name: "Next.js",
-          style: "badge_nextjs"
+          style: "badge_nextjs",
         },
         {
           name: "TailwindCSS",
-          style: "badge_tailwind"
+          style: "badge_tailwind",
         },
         {
           name: "React",
-          style: "badge_react"
+          style: "badge_react",
         },
         {
           name: "MongoDB",
-          style: "badge_mongo"
-        }
+          style: "badge_mongo",
+        },
       ],
       links: {
         github: "https://github.com/Diptags/pradipta-personal-page",
-        live: "https://pradipta.xyz"
+        live: "https://pradipta.xyz",
       },
       details: {
         desc: `
@@ -96,18 +97,157 @@ export const projectPageData = {
           This experience deepened my appreciation for persistence and adaptability, reflecting my commitment to continuously improving in both software engineering and design.
           I'm proud of the result and plan to keep refining and enhancing it over time.
         `,
-        contributions: [],  // Intentionally empty due to personal projects
+        contributions: [], // Intentionally empty due to personal projects
         features: [
           "🏠 Home - A warm introduction to who I am",
           "👤 About - A glimpse into my background and skill set",
           "💼 Projects - A showcase of my work and accomplishments",
           "📚 Blogs - Sharing thoughts, insights, and personal experiences",
           "📧 Contact - A simple way to get in touch with me",
-        ]
+        ],
       },
     },
     {
       id: 3,
+      cover: "/images/project_images/bvgc.png",
+      showcases: ["/images/project_images/bvgc-showcase.png"],
+      flags: {
+        is_full_version: true,
+        is_show_repo_url: false,
+        is_show_demo_url: false,
+        is_show_contribution: true,
+        is_show_features: false,
+      },
+      name: "Shopee Buy Voucher Get Coins",
+      type: "Project Contributions - Corporate", // TODO: Make this into enum
+      desc: "Buy Voucher Get Coins is a shared library project utilized by multiple teams and projects to serve users seeking free coins through voucher purchases. It was developed using React (for Android) and React Native (for iOS).",
+      technologies: [
+        {
+          name: "React",
+          style: "badge_react",
+        },
+        {
+          name: "React Native",
+          style: "badge_react",
+        },
+      ],
+      links: {
+        github: "",
+        live: "",
+      },
+      details: {
+        desc: `
+          Buy Voucher Get Coins is a shared library project utilized by multiple teams and projects to serve users seeking free coins through voucher purchases.
+          It was developed using React (for Android) and React Native (for iOS).
+          Moreover, behind the scene, this project also have surrounding systems, such as RN plugin, Iframe webpage, and internal dashboards that currently being used
+          by locals and marketing teams to provide the best purchasable packages for end-user through in-game purchases.
+        `,
+        contributions: [
+          "Served as a Frontend Engineer, responsible for developing requested features throughout the entire product lifecycle: from requirement gathering and development to deployment and maintenance.",
+          "Handled feature requests, bug fixes, and integration support for tenant teams.",
+          "Collaborated with PMs, designers, Backend, QA, TPM, and cross-functional stakeholders to turn Figma designs production-ready features.",
+          "Add and improve project integration tests up to 85%.",
+          "Developed FE technical documents & guidelines to assist many teams especially tenant teams.",
+        ],
+        features: [],
+      },
+    },
+    {
+      id: 4,
+      cover: "/images/project_images/luckydraw.png",
+      showcases: [
+        "/images/project_images/luckydraw-showcase-1.png",
+        "/images/project_images/luckydraw-showcase-2.png",
+      ],
+      flags: {
+        is_full_version: true,
+        is_show_repo_url: false,
+        is_show_demo_url: false,
+        is_show_contribution: true,
+        is_show_features: false,
+      },
+      name: "Shopee Lucky Draw",
+      type: "Project Contributions - Corporate", // TODO: Make this into enum
+      desc: "Shopee Lucky Draw is a gamification project that allows users to win prizes through participation, currently running on production and serving users from various regions. This project is developed using React, React Native and TypeScript.",
+      technologies: [
+        {
+          name: "React",
+          style: "badge_react",
+        },
+        {
+          name: "React Native",
+          style: "badge_react",
+        },
+      ],
+      links: {
+        github: "",
+        live: "",
+      },
+      details: {
+        desc: `
+          Shopee Lucky Draw is a gamification project that allows users to win prizes through participation, currently running on production and serving users from various regions.
+          This project is developed using React, React Native and TypeScript. Lucky Draw available in web iframe, React Native page, and microsite page.
+        `,
+        contributions: [
+          "Served as a Frontend Engineer, responsible for developing requested features throughout the entire product development lifecycle",
+          "Implemented URL routing workflow for redirection from the HTTPS URL to the project RN plugin inside the Shopee app",
+          "Collaborated in improving the integration test coverage to reach 90%.",
+          "Researched & Implemented an FE funnel monitoring for this project using Prometheus, Grafana & PromQL from tool usage research to production—tracking 30+ metrics (e.g., success rates, load times, user distribution, etc) to enable better issue detection, deployment diagnostics & performance optimization. Resulting in 20% improvements in success rate & loading time.",
+          "Collaborated with PMs, designers, Backend, QA, TPM, and cross-functional stakeholders to turn Figma designs into polished, production-ready UI features.",
+          "Developed various FE technical documents & guidelines to increase team productivity.",
+          "Implemented PoC (Proof of Concept) RN E2E Visual Testing using Simulator, XCode, RN Testing Library, and internal tools.",
+          "Specifically worked in Lucky Draw Wheel Game Mode that is often used in several SEA countries as their Business As Usual campaigns",
+        ],
+        features: [],
+      },
+    },
+
+    {
+      id: 5,
+      cover: "/images/project_images/stamp.png",
+      showcases: [
+        "/images/project_images/stamp-showcase-1.png",
+        "/images/project_images/stamp-showcase-2.png",
+      ],
+      flags: {
+        is_full_version: true,
+        is_show_repo_url: false,
+        is_show_demo_url: false,
+        is_show_contribution: true,
+        is_show_features: false,
+      },
+      name: "Shopee Buyer Quest (Stamp)",
+      type: "Project Contributions - Corporate", // TODO: Make this into enum
+      desc: "Shopee Buyer Mission (Stamp) is a gamified feature that rewards users for collecting stamps through active participation. Currently live in production, it serves users across various regions. Built with React (Vite) and TypeScript, the feature is accessible via a web iframe and a standalone microsite.",
+      technologies: [
+        {
+          name: "React",
+          style: "badge_react",
+        },
+      ],
+      links: {
+        github: "",
+        live: "",
+      },
+      details: {
+        desc: `
+        Shopee Buyer Mission (Stamp) is a gamified user engagement initiative that encourages users to participate in various activities to collect digital stamps and win exciting rewards.
+        The feature is currently live in the production environment and actively serves a diverse user base across different regions.
+        Developed with modern web technologies including React (powered by Vite) and TypeScript, the project ensures a responsive and efficient user experience.
+        Users can access the Stamp feature either through a web-based iframe embedded in the main platform or via a standalone microsite, offering flexible entry points for different use cases.
+        `,
+        contributions: [
+          "Served as a Frontend Engineer, responsible for developing requested features throughout the entire product development lifecycle",
+          "Implemented requested features for both versions",
+          "Implemented code linter standardization, reducing 1900 errors & warnings to zero (0) issues",
+          "Collaborated in improving the integration test coverage to reach 80%.",
+        ],
+        features: [],
+      },
+    },
+
+    {
+      id: 6,
       cover: "/images/project_images/skulite.png",
       showcases: ["/images/project_images/skulite-showcase.png"],
       flags: {
@@ -123,20 +263,21 @@ export const projectPageData = {
       technologies: [
         {
           name: "VueJS",
-          style: "badge_mongo"
+          style: "badge_mongo",
         },
         {
           name: "Django",
-          style: "badge_tailwind"
+          style: "badge_tailwind",
         },
         {
           name: "PostgreSQL",
-          style: "badge_react"
+          style: "badge_react",
         },
       ],
       links: {
-        github: "https://drive.google.com/file/d/1uWklrmCTaTLa5i8v7TPfP0P7GoHK-0S1/view?usp=sharing",
-        live: "https://skulite.netlify.app/"
+        github:
+          "https://drive.google.com/file/d/1uWklrmCTaTLa5i8v7TPfP0P7GoHK-0S1/view?usp=sharing",
+        live: "https://skulite.netlify.app/",
       },
       details: {
         desc: `
@@ -150,19 +291,19 @@ export const projectPageData = {
           "🏠 Study Place Exploration",
           "🕒 Learning Place Availability Schedule & House Rules",
           "💵 Donation for Learning Place or Tutor",
-          "👨‍👩‍👧‍👦 User Profile and Parental Controls"
+          "👨‍👩‍👧‍👦 User Profile and Parental Controls",
         ],
         contributions: [
           "Collaborated with the team to discuss all requirements, technology stacks, and project architecture.",
           "Contributed in the development of the application proposal and project documentation.",
           "Contributed in the development of the application UI design and layout using Figma.",
           "Collaborated in the development the frontend system using Vue.js.",
-          "Intensive testing and bugfixes."
+          "Intensive testing and bugfixes.",
         ],
       },
     },
     {
-      id: 4,
+      id: 7,
       cover: "/images/project_images/pss-game.png",
       showcases: ["/images/project_images/pss-game-showcase.png"],
       flags: {
@@ -178,12 +319,12 @@ export const projectPageData = {
       technologies: [
         {
           name: "Unity Game Engine",
-          style: "badge_nextjs"
+          style: "badge_nextjs",
         },
       ],
       links: {
         github: "",
-        live: "https://docs.google.com/document/d/1dMmky6VsDifmX38t8bbjtmTWeMjjJK70rtTqtzqSrkI/edit?usp=sharing"
+        live: "https://docs.google.com/document/d/1dMmky6VsDifmX38t8bbjtmTWeMjjJK70rtTqtzqSrkI/edit?usp=sharing",
       },
       details: {
         desc: `
@@ -202,12 +343,12 @@ export const projectPageData = {
           "Created the game UI design and layout in Unity scenes.",
           "Contributed in game design and implementation proposal development together with my team consisting of 3 persons to be submitted for the competition.",
           "Utilized design tools to create mock game user interfaces and implemented them in Unity.",
-          "Collaborated in the MVP (Minimum Viable Product) game development."
+          "Collaborated in the MVP (Minimum Viable Product) game development.",
         ],
       },
     },
     {
-      id: 5,
+      id: 8,
       cover: "/images/project_images/sos-game.png",
       showcases: ["/images/project_images/sos-game-showcase.png"],
       flags: {
@@ -223,12 +364,12 @@ export const projectPageData = {
       technologies: [
         {
           name: "React",
-          style: "badge_react"
+          style: "badge_react",
         },
       ],
       links: {
         github: "https://gitlab.com/rd.pradipta/sos-game/",
-        live: ""
+        live: "",
       },
       details: {
         desc: `
@@ -245,149 +386,6 @@ export const projectPageData = {
         contributions: [],
       },
     },
-
-
-
-    // Shopee Projects
-    // {
-    //   id: 3,
-    //   cover: "/images/project_images/bvgc.png",
-    //   showcases: ["/images/project_images/bvgc-showcase.png"],
-    //   flags: {
-    //     is_full_version: true,
-    //     is_show_repo_url: false,
-    //     is_show_demo_url: false,
-    //     is_show_contribution: true,
-    //     is_show_features: false,
-    //   },
-    //   name: "Shopee Buy Voucher Get Coins",
-    //   type: "Project Contributions - Corporate", // TODO: Make this into enum
-    //   desc: "Buy Voucher Get Coins is a shared library project utilized by multiple teams and projects to serve users seeking free coins through voucher purchases. It was developed using React (for Android) and React Native (for iOS).",
-    //   technologies: [
-    //     {
-    //       name: "React",
-    //       style: "badge_react"
-    //     },
-    //     {
-    //       name: "React Native",
-    //       style: "badge_react"
-    //     },
-    //   ],
-    //   links: {
-    //     github: "",
-    //     live: ""
-    //   },
-    //   details: {
-    //     desc: `
-    //       Buy Voucher Get Coins is a shared library project utilized by multiple teams and projects to serve users seeking free coins through voucher purchases.
-    //       It was developed using React (for Android) and React Native (for iOS).
-    //       Moreover, behind the scene, this project also have surrounding systems, such as RN plugin, Iframe webpage, and internal dashboards that currently being used
-    //       by locals and marketing teams to provide the best purchasable packages for end-user through in-game purchases.
-    //     `,
-    //     contributions: [
-    //       "Served as a Frontend Engineer, responsible for developing requested features throughout the entire product lifecycle: from requirement gathering and development to deployment and maintenance.",
-    //       "Handled feature requests, bug fixes, and integration support for tenant teams.",
-    //       "Collaborated with PMs, designers, Backend, QA, TPM, and cross-functional stakeholders to turn Figma designs into polished, production-ready UI features.",
-    //       "Add and improve project integration tests up to 85%.",
-    //       "Developed FE technical documents & guidelines to assist many teams especially tenant teams."
-    //     ],
-    //     features: []
-    //   },
-    // },
-    // {
-    //   id: 4,
-    //   cover: "/images/project_images/luckydraw.png",
-    //   showcases: ["/images/project_images/luckydraw-showcase-1.png", "/images/project_images/luckydraw-showcase-2.png"],
-    //   flags: {
-    //     is_full_version: true,
-    //     is_show_repo_url: false,
-    //     is_show_demo_url: false,
-    //     is_show_contribution: true,
-    //     is_show_features: false,
-    //   },
-    //   name: "Shopee Lucky Draw",
-    //   type: "Project Contributions - Corporate", // TODO: Make this into enum
-    //   desc: "Shopee Lucky Draw is a gamification project that allows users to win prizes through participation, currently running on production and serving users from various regions. This project is developed using React, React Native and TypeScript.",
-    //   technologies: [
-    //     {
-    //       name: "React",
-    //       style: "badge_react"
-    //     },
-    //     {
-    //       name: "React Native",
-    //       style: "badge_react"
-    //     },
-    //   ],
-    //   links: {
-    //     github: "",
-    //     live: ""
-    //   },
-    //   details: {
-    //     desc: `
-    //       Shopee Lucky Draw is a gamification project that allows users to win prizes through participation, currently running on production and serving users from various regions.
-    //       This project is developed using React, React Native and TypeScript. Lucky Draw available in web iframe, React Native page, and microsite page.
-    //     `,
-    //     contributions: [
-    //       "Served as a Frontend Engineer, responsible for developing requested features throughout the entire product development lifecycle",
-    //       "Implemented URL routing workflow for redirection from the HTTPS URL to the project RN plugin inside the Shopee app",
-    //       "Collaborated in improving the integration test coverage to reach 90%.",
-    //       "Researched & Implemented an FE funnel monitoring for this project using Prometheus, Grafana & PromQL from tool usage research to production—tracking 30+ metrics (e.g., success rates, load times, user distribution, etc) to enable better issue detection, deployment diagnostics & performance optimization. Resulting in 20% improvements in success rate & loading time.",
-    //       "Collaborated with PMs, designers, Backend, QA, TPM, and cross-functional stakeholders to turn Figma designs into polished, production-ready UI features.",
-    //       "Developed various FE technical documents & guidelines to increase team productivity.",
-    //       "Implemented PoC (Proof of Concept) RN E2E Visual Testing using Simulator, XCode, RN Testing Library, and internal tools.",
-    //       "Involved in 9/11 Lucky Draw features, serving SEA + LATAM countries",
-    //       "Specifically worked in Lucky Draw Wheel Game Mode that is often used in several SEA countries as their Business As Usual campaigns",
-    //     ],
-    //     features: []
-    //   },
-    // },
-    // {
-    //   id: 5,
-    //   cover: "/images/project_images/stamp.png",
-    //   showcases: ["/images/project_images/stamp-showcase.png"],
-    //   flags: {
-    //     is_full_version: true,
-    //     is_show_repo_url: false,
-    //     is_show_demo_url: false,
-    //     is_show_contribution: true,
-    //     is_show_features: false,
-    //   },
-    //   name: "Shopee Buyer Quest (Stamp)",
-    //   type: "Project Contributions - Corporate", // TODO: Make this into enum
-    //   desc: "Shopee Lucky Draw is a gamification project that allows users to win prizes through participation, currently running on production and serving users from various regions. This project is developed using React, React Native and TypeScript.",
-    //   technologies: [
-    //     {
-    //       name: "React",
-    //       style: "badge_react"
-    //     },
-    //     {
-    //       name: "React Native",
-    //       style: "badge_react"
-    //     },
-    //   ],
-    //   links: {
-    //     github: "",
-    //     live: ""
-    //   },
-    //   details: {
-    //     desc: `
-    //       Shopee Lucky Draw is a gamification project that allows users to win prizes through participation, currently running on production and serving users from various regions.
-    //       This project is developed using React, React Native and TypeScript. Lucky Draw available in web iframe, React Native page, and microsite page.
-    //     `,
-    //     contributions: [
-    //       "Served as a Frontend Engineer, responsible for developing requested features throughout the entire product development lifecycle",
-    //       "Implemented URL routing workflow for redirection from the HTTPS URL to the project RN plugin inside the Shopee app",
-    //       "Collaborated in improving the integration test coverage to reach 90%.",
-    //       "Researched & Implemented an FE funnel monitoring for this project using Prometheus, Grafana & PromQL from tool usage research to production—tracking 30+ metrics (e.g., success rates, load times, user distribution, etc) to enable better issue detection, deployment diagnostics & performance optimization. Resulting in 20% improvements in success rate & loading time.",
-    //       "Collaborated with PMs, designers, Backend, QA, TPM, and cross-functional stakeholders to turn Figma designs into polished, production-ready UI features.",
-    //       "Developed various FE technical documents & guidelines to increase team productivity.",
-    //       "Implemented PoC (Proof of Concept) RN E2E Visual Testing using Simulator, XCode, RN Testing Library, and internal tools.",
-    //       "Involved in 9/11 Lucky Draw features, serving SEA + LATAM countries",
-    //       "Specifically worked in Lucky Draw Wheel Game Mode that is often used in several SEA countries as their Business As Usual campaigns",
-    //     ],
-    //     features: []
-    //   },
-    // },
   ],
-  more_projects: "https://github.com/diptags?tab=repositories"
+  more_projects: "https://github.com/diptags?tab=repositories",
 };
