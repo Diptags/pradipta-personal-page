@@ -26,7 +26,7 @@ export const homePageData = {
   // Buttons and Links
   buttons: ["Get CV", "WhatsApp Me"],
   links: {
-    resume: "https://docs.google.com/document/d/1p6R9KG3CNLVprYmi8uv_27uVoVy4W8IpolaG_Hodvow/edit?usp=sharing",
+    resume: "https://docs.google.com/document/d/1bIwBNafZRC16bGgw83d2XkD6HMI2zxyScd-1ILAOnPA/edit?usp=sharing",
     whatsapp: "https://wa.link/tryppq",
   },
   socials: [
